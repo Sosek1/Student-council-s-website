@@ -1,0 +1,39 @@
+@include media-sm {}
+
+@include media-md {}
+
+@include media-lg {
+
+    // menu
+
+    .menu-btn {
+        visibility: hidden;
+    }
+
+    .nav {
+        position: relative;
+
+        .menu-nav {
+            position: absolute;
+            right: 0;
+            height: 100%;
+            width: 70%;
+            transform: translateY(0);
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            margin: 0;
+
+            .item {
+                margin: 1.5rem;
+
+                .link {
+                    color: $second-color;
+                }
+            }
+        }
+    }
+
+}
+
+@include media-xl {}
