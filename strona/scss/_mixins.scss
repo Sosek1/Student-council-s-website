@@ -9,7 +9,7 @@
 }
 
 @mixin media-sm {
-    @media screen and (min-width: 576px) {
+    @media screen and (min-width: 300px) {
         @content;
     }
 }
@@ -28,6 +28,12 @@
 
 @mixin media-xl {
     @media screen and (min-width: 1200px) {
+        @content;
+    }
+}
+
+@mixin media-sm-landscape {
+    @media screen and (max-width:900px) and (orientation:landscape) {
         @content;
     }
 }

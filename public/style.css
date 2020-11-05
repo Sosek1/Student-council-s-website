@@ -7171,110 +7171,219 @@ a.text-dark:hover, a.text-dark:focus {
   padding: 0;
   height: 100vh; }
 
-.menu-btn {
-  position: absolute;
-  z-index: 3;
-  right: 1rem;
-  top: 5vh;
-  height: 20px;
-  width: 28px;
-  cursor: pointer;
-  transition: all 0.5s ease-in-out;
-  visibility: visible; }
-  .menu-btn__burger {
-    position: absolute;
-    right: 0;
-    top: 0.5rem;
-    width: 28px;
-    height: 3px;
-    background: #fff;
-    transition: all 0.5s ease-in-out; }
-    .menu-btn__burger::before {
-      content: '';
-      position: absolute;
-      top: -8px;
-      width: 28px;
-      height: 3px;
-      background: #fff; }
-    .menu-btn__burger::after {
-      content: '';
-      position: absolute;
-      top: 8px;
-      width: 20px;
-      height: 3px;
-      background: #fff; }
-    .menu-btn__burger.open {
-      transform: rotate(720deg);
-      background: transparent; }
-      .menu-btn__burger.open::before {
-        transform: rotate(45deg) translate(5px, 8px); }
-      .menu-btn__burger.open::after {
-        width: 28px;
-        transform: rotate(-45deg) translate(3px, -7px); }
+img {
+  height: 10vh; }
 
-nav {
-  height: 12.5vh;
-  position: relative;
+.link {
+  padding: 0 1rem;
+  color: #fff;
+  font-size: 1rem;
+  transition: all 0.5s ease-in-out; }
+
+.link:hover {
+  color: #e49e00;
+  text-decoration: none; }
+
+.menuBar {
   background: #000; }
-  nav img {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 1rem;
-    height: 90%;
-    z-index: 3; }
-  nav .menu-nav {
-    height: 100vh;
-    width: 100%;
-    background: #000;
-    transform: translateY(-100%);
-    z-index: 2;
-    transition: all 0.5s ease-in-out;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    flex-direction: column; }
-    nav .menu-nav.open {
-      transform: translateY(0); }
-    nav .menu-nav .item {
-      list-style-type: none;
-      margin-top: 1rem; }
-      nav .menu-nav .item .link {
-        text-decoration: none;
-        color: #e49e00;
-        font-size: 1.5rem; }
+
+footer {
+  height: 5vh;
+  background: #e49e00;
+  align-items: center;
+  justify-content: center;
+  display: flex; }
+  footer p {
+    margin: 0;
+    color: #fff;
+    font-family: "Roboto", sans-serif; }
+
+@media screen and (min-width: 300px) {
+  
+  .container-fluid,
+  .container-sm,
+  .container-md,
+  .container-lg,
+  .container-xl {
+    overflow-x: hidden; }
+  .headings h1 {
+    font-size: 2rem; }
+  .headings h2 {
+    font-size: 1.5rem; }
+  .headings h3 {
+    font-size: 1rem; }
+  .menuBar {
+    height: 15vh; }
+  .bar {
+    height: 15vh; }
+  footer p {
+    font-size: .7rem; }
+  .header h1 {
+    font-size: 2rem; }
+  .about .img {
+    height: 70vh; }
+  .about .text {
+    height: 70vh; }
+    .about .text h1 {
+      font-size: 1.6rem; }
+    .about .text h2 {
+      font-size: 1.4rem; }
+    .about .text p {
+      font-size: .8rem; }
+  .discounts .image {
+    height: 70vh; }
+  .contact {
+    height: 80vh;
+    box-sizing: border-box;
+    margin: 1rem; }
+  form {
+    margin: 1rem;
+    padding: 1rem;
+    width: 100vw;
+    height: 100%; }
+    form h1 {
+      font-size: 1.5rem;
+      margin: .5rem 0;
+      padding: .5rem 0; }
+    form input {
+      margin: .5rem 0;
+      padding: .5rem 0; }
+    form ::placeholder {
+      margin: .5rem 0;
+      padding: .5rem 0; }
+    form textarea {
+      margin: .5rem 0; }
+    form button {
+      width: 40%;
+      border: 2px solid #fff;
+      background-color: transparent;
+      color: #fff;
+      padding: .5rem; } }
+
+@media screen and (min-width: 768px) {
+  .headings h1 {
+    font-size: 3rem; }
+  .headings h2 {
+    font-size: 2.5rem; }
+  .headings h3 {
+    font-size: 2rem; }
+  .navbar-brand img {
+    height: 12.5vh; }
+  .menuBar {
+    height: 12.5vh; }
+  .bar {
+    height: 12.5vh; }
+  footer p {
+    font-size: 1rem; }
+  .header h1 {
+    font-size: 3rem; }
+  .about .text h1 {
+    font-size: 3rem; }
+  .about .text h2 {
+    font-size: 2.5rem; }
+  .about .text p {
+    font-size: 1.5rem;
+    padding: 5rem; }
+  .discounts .image {
+    height: 70vh; }
+  .contact {
+    height: 85vh;
+    box-sizing: border-box; }
+  form {
+    margin: 2rem;
+    padding: 2rem;
+    width: 60vh;
+    height: 60vh; }
+    form h1 {
+      font-size: 2rem;
+      margin: 1rem 0;
+      padding: 1rem 0; }
+    form input {
+      margin: .8rem 0;
+      padding: .8rem 0; }
+    form ::placeholder {
+      margin: .8rem 0;
+      padding: .8rem 0; }
+    form button {
+      width: 40%;
+      border: 2px solid #fff;
+      background-color: transparent;
+      color: #fff;
+      padding: .5rem; } }
 
 @media screen and (min-width: 992px) {
-  .menu-btn {
-    visibility: hidden; }
-  .nav {
-    position: relative; }
-    .nav .menu-nav {
-      position: absolute;
-      right: 0;
-      height: 100%;
-      width: 70%;
-      transform: translateY(0);
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-end;
-      margin: 0; }
-      .nav .menu-nav .item {
-        margin: 1.5rem; }
-        .nav .menu-nav .item .link {
-          color: #fff; } }
+  .headings h1 {
+    font-size: 5rem; }
+  .headings h2 {
+    font-size: 4.5rem; }
+  .headings h3 {
+    font-size: 3rem; }
+  footer p {
+    font-size: 1rem; }
+  .discounts .image {
+    height: 50vh; } }
 
-body {
-  overflow: hidden; }
+@media screen and (min-width: 1200px) {
+  .header h1 {
+    font-size: 4rem; }
+  .about .text h1 {
+    font-size: 3rem; }
+  .about .text h2 {
+    font-size: 2.5rem; }
+  .about .text p {
+    font-size: 1.3rem;
+    padding: 5rem; } }
+
+@media screen and (max-width: 900px) and (orientation: landscape) {
+  .bar {
+    height: 15vh; }
+  .about .img {
+    height: 150vh; }
+  .about .text {
+    height: 120vh; }
+    .about .text h1 {
+      font-size: 1.6rem; }
+    .about .text h2 {
+      font-size: 1.4rem; }
+    .about .text p {
+      font-size: .8rem; } }
 
 .banner {
   height: 70vh;
-  background-image: url("/img/main.jpg");
+  background: url(/img/main.jpg);
   background-size: cover;
-  filter: brightness(0.5); }
+  display: flex;
+  position: relative; }
+  .banner .brightness {
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.5; }
+  .banner .headings {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    width: 100vw; }
+    .banner .headings h1 {
+      color: #e49e00;
+      font-family: "Roboto", sans-serif;
+      text-align: center;
+      font-weight: 400; }
+    .banner .headings h2 {
+      color: #e49e00;
+      font-family: "Roboto", sans-serif;
+      text-align: center;
+      font-weight: 400; }
+    .banner .headings h3 {
+      color: #e49e00;
+      font-family: "Roboto", sans-serif;
+      text-align: center;
+      font-style: italic;
+      font-weight: 300; }
 
 .bar {
-  height: 12.5vh;
   background: #000;
   align-items: center;
   justify-content: center;
@@ -7285,13 +7394,215 @@ body {
     padding: 1rem;
     z-index: 3; }
 
-footer {
-  height: 5vh;
-  background: #e49e00;
+body {
+  background: #111;
+  font-family: "Roboto", sans-serif; }
+
+.header {
   align-items: center;
   justify-content: center;
   display: flex; }
-  footer p {
-    font-size: .8rem;
-    margin: 0;
+  .header h1 {
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    color: #e49e00; }
+
+.about .img {
+  background-color: #000; }
+
+.about .bartek {
+  background: url(../img/_DSC4453.jpg);
+  background-size: cover; }
+
+.about .ania {
+  background: url(../img/_DSC4459.jpg);
+  background-size: cover; }
+
+.about .aga {
+  background: url(../img/_DSC4462.jpg);
+  background-size: cover; }
+
+.about .krzysiek {
+  background: url(../img/_DSC4498.jpg);
+  background-size: cover; }
+
+.about .ala {
+  background: url(../img/_DSC4481.jpg);
+  background-size: cover; }
+
+.about .emilia {
+  background: url(../img/_DSC4467.jpg);
+  background-size: cover; }
+
+.about .text {
+  background-color: #000; }
+  .about .text h1 {
+    color: #e49e00;
+    margin: 0 auto;
+    text-align: center; }
+  .about .text h2 {
+    color: #fff;
+    margin: 0 auto; }
+  .about .text p {
+    color: #fff;
+    margin: 0 auto;
+    text-align: center; }
+
+.discounts .image {
+  position: relative;
+  overflow-x: hidden; }
+  .discounts .image .stripe {
+    position: absolute;
+    bottom: 0;
+    height: 20px;
+    width: 100%;
+    background: #e49e00; }
+
+.discounts .hardrock {
+  background: url(../img/image6.jpeg) center;
+  background-size: cover;
+  background-color: #444444; }
+
+.discounts .hardrock2 {
+  background: url(../img/imag5.jpeg) center right;
+  background-size: cover;
+  background-color: #444444; }
+
+.discounts .starbucks {
+  background: url();
+  background-size: cover;
+  background-color: #444444; }
+
+.discounts .gym {
+  background: url();
+  background-size: cover;
+  background-color: #444444; }
+
+.discounts .restaurant {
+  background: url();
+  background-size: cover;
+  background-color: #444444; }
+
+.discounts .restaurant2 {
+  background: url();
+  background-size: cover;
+  background-color: #444444; }
+
+.discounts .club {
+  background: url();
+  background-size: cover;
+  background-color: #444444; }
+
+.contact {
+  align-items: center;
+  justify-content: center;
+  display: flex; }
+
+form {
+  display: flex;
+  flex-direction: column;
+  background-color: #e49e00; }
+  form h1 {
+    height: 10%;
     color: #fff; }
+  form input {
+    height: 10%;
+    background-color: transparent;
+    border-style: none;
+    border-bottom: 2px solid #fff;
+    color: #fff; }
+  form ::placeholder {
+    color: #fff; }
+  form textarea {
+    background-color: transparent;
+    height: 60%;
+    border: none;
+    color: #fff; }
+  form textarea:checked {
+    border: none; }
+  form .buttonNote {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    form .buttonNote button {
+      border: 2px solid #fff;
+      background-color: transparent;
+      color: #fff;
+      transition: all 0.5s ease-in-out; }
+    form .buttonNote button:hover {
+      background-color: #000; }
+    form .buttonNote i {
+      font-size: 2rem;
+      color: #fff;
+      transition: all 0.5s ease-in-out; }
+    form .buttonNote i:hover {
+      animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+      transform: translate3d(0, 0, 0);
+      backface-visibility: hidden;
+      perspective: 1000px;
+      color: #000; }
+
+@keyframes shake {
+  10% {
+    transform: translate3d(-1px, 0, 0); }
+  20% {
+    transform: translate3d(2px, 0, 0); }
+  30% {
+    transform: translate3d(-4px, 0, 0); }
+  40% {
+    transform: translate3d(4px, 0, 0); }
+  50% {
+    transform: translate3d(-4px, 0, 0); }
+  60% {
+    transform: translate3d(4px, 0, 0); }
+  70% {
+    transform: translate3d(-4px, 0, 0); }
+  80% {
+    transform: translate3d(2px, 0, 0); }
+  90% {
+    transform: translate3d(-1px, 0, 0); } }
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: hidden;
+  /* Enable scroll if needed */
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.4); }
+
+.modal-content {
+  background-color: #000;
+  padding: 20px;
+  width: 40vh;
+  height: 40vh;
+  margin: auto auto; }
+  .modal-content p {
+    font-size: 1rem;
+    color: #fff;
+    text-align: center;
+    margin: auto auto; }
+
+.close {
+  color: #e49e00;
+  margin-left: 95%;
+  font-size: 28px; }
+
+.close:hover,
+.close:focus {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer; }
+
+.bg-black {
+  background: black; }

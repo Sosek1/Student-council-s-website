@@ -1,39 +1,303 @@
-@include media-sm {}
-
-@include media-md {}
-
-@include media-lg {
-
-    // menu
-
-    .menu-btn {
-        visibility: hidden;
+@include media-sm {
+    .container-fluid {
+        overflow-x: hidden;
     }
 
-    .nav {
-        position: relative;
+    // Home page
+    .headings {
+        h1 {
+            font-size: 2rem;
+        }
 
-        .menu-nav {
-            position: absolute;
-            right: 0;
-            height: 100%;
-            width: 70%;
-            transform: translateY(0);
-            display: flex;
-            flex-direction: row;
-            justify-content: flex-end;
-            margin: 0;
+        h2 {
+            font-size: 1.5rem;
+        }
 
-            .item {
-                margin: 1.5rem;
+        h3 {
+            font-size: 1rem;
+        }
+    }
 
-                .link {
-                    color: $second-color;
-                }
+    .menuBar {
+        height: 15vh;
+    }
+
+    .bar {
+        height: 15vh;
+    }
+
+    footer {
+        p {
+            font-size: .7rem;
+        }
+    }
+
+    // About us
+    .header {
+        h1 {
+            font-size: 2rem;
+        }
+    }
+
+    .about {
+        .img {
+            height: 70vh;
+        }
+
+        .text {
+            height: 70vh;
+
+            h1 {
+                font-size: 1.6rem;
+            }
+
+            h2 {
+                font-size: 1.4rem;
+            }
+
+            p {
+                font-size: .8rem;
             }
         }
     }
 
+    // Discounts
+    .discounts {
+        .image {
+            height: 70vh;
+        }
+    }
+
+    // Contact
+    .contact {
+        height: 80vh;
+        box-sizing: border-box;
+        margin: 1rem;
+    }
+
+    form {
+        margin: 1rem;
+        padding: 1rem;
+        width: 100vw;
+        height: 100%;
+
+        h1 {
+            font-size: 1.5rem;
+            margin: .5rem 0;
+            padding: .5rem 0;
+        }
+
+        input {
+            margin: .5rem 0;
+            padding: .5rem 0;
+        }
+
+        ::placeholder {
+            margin: .5rem 0;
+            padding: .5rem 0;
+        }
+
+        textarea {
+            margin: .5rem 0;
+        }
+
+        button {
+            width: 40%;
+            border: 2px solid $second-color;
+            background-color: transparent;
+            color: $second-color;
+            padding: .5rem;
+        }
+    }
 }
 
-@include media-xl {}
+@include media-md {
+    // Homepage
+    .headings {
+        h1 {
+            font-size: 3rem;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+        }
+
+        h3 {
+            font-size: 2rem;
+        }
+    }
+
+    .navbar-brand {
+        img {
+            height: 12.5vh;
+        }
+    }
+
+    .menuBar {
+        height: 12.5vh;
+    }
+
+    .bar {
+        height: 12.5vh;
+    }
+
+    footer {
+        p {
+            font-size: 1rem;
+        }
+    }
+
+    // About us
+    .header {
+        h1 {
+            font-size: 3rem;
+        }
+    }
+
+    .about {
+        .text {
+            h1 {
+                font-size: 3rem;
+            }
+
+            h2 {
+                font-size: 2.5rem;
+            }
+
+            p {
+                font-size: 1.5rem;
+                padding: 5rem;
+            }
+        }
+    }
+
+    // Discounts
+    .discounts {
+        .image {
+            height: 70vh;
+        }
+    }
+
+    // Contact
+    .contact {
+        height: 85vh;
+        box-sizing: border-box;
+    }
+
+    form {
+        margin: 2rem;
+        padding: 2rem;
+        width: 60vh;
+        height: 60vh;
+
+        h1 {
+            font-size: 2rem;
+            margin: 1rem 0;
+            padding: 1rem 0;
+        }
+
+        input {
+            margin: .8rem 0;
+            padding: .8rem 0;
+        }
+
+        ::placeholder {
+            margin: .8rem 0;
+            padding: .8rem 0;
+        }
+
+        button {
+            width: 40%;
+            border: 2px solid $second-color;
+            background-color: transparent;
+            color: $second-color;
+            padding: .5rem;
+        }
+    }
+}
+
+@include media-lg {
+    //Homepage
+    .headings {
+        h1 {
+            font-size: 5rem;
+        }
+
+        h2 {
+            font-size: 4.5rem;
+        }
+
+        h3 {
+            font-size: 3rem;
+        }
+    }
+
+    footer {
+        p {
+            font-size: 1rem;
+        }
+    }
+
+    //Discounts
+    .discounts {
+        .image {
+            height: 50vh;
+        }
+    }
+}
+
+@include media-xl {
+    // About us
+
+    .header {
+        h1 {
+            font-size: 4rem;
+        }
+    }
+
+    .about {
+        .text {
+            h1 {
+                font-size: 3rem;
+            }
+
+            h2 {
+                font-size: 2.5rem;
+            }
+
+            p {
+                font-size: 1.3rem;
+                padding: 5rem;
+            }
+        }
+    }
+}
+
+@include media-sm-landscape {
+    .bar {
+        height: 15vh;
+    }
+
+    // About us
+    .about {
+        .img {
+            height: 150vh;
+        }
+
+        .text {
+            height: 120vh;
+
+            h1 {
+                font-size: 1.6rem;
+            }
+
+            h2 {
+                font-size: 1.4rem;
+            }
+
+            p {
+                font-size: .8rem;
+            }
+        }
+    }
+}

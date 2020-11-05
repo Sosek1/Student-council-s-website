@@ -1,10 +1,9 @@
-const menuBtn = document.querySelector('.menu-btn');
+/*const menuBtn = document.querySelector('.menu-btn');
 const hamburger = document.querySelector('.menu-btn__burger');
 const nav = document.querySelector('.nav');
 const menuNav = document.querySelector('.menu-nav');
 
 let showMenu = false;
-
 
 menuBtn.addEventListener('click', toggleMenu);
 
@@ -20,4 +19,4 @@ function toggleMenu() {
         menuNav.classList.remove('open')
         showMenu = false;
     }
-}
+}*/

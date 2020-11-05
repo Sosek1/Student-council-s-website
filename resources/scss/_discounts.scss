@@ -1,0 +1,59 @@
+//header in _about
+
+.discounts {
+    .image {
+
+        position: relative;
+        overflow-x: hidden;
+
+        .stripe {
+            position: absolute;
+            bottom: 0;
+            height: 20px;
+            width: 100%;
+            background: $third-color;
+        }
+    }
+
+    .hardrock {
+        background: url(../img/image6.jpeg) center;
+        background-size: cover;
+        background-color: #444444;
+    }
+
+    .hardrock2 {
+        background: url(../img/imag5.jpeg) center right;
+        background-size: cover;
+        background-color: #444444;
+    }
+
+    .starbucks {
+        background: url();
+        background-size: cover;
+        background-color: #444444;
+    }
+
+    .gym {
+        background: url();
+        background-size: cover;
+        background-color: #444444;
+    }
+
+    .restaurant {
+        background: url();
+        background-size: cover;
+        background-color: #444444;
+    }
+
+    .restaurant2 {
+        background: url();
+        background-size: cover;
+        background-color: #444444;
+    }
+
+    .club {
+        background: url();
+        background-size: cover;
+        background-color: #444444;
+    }
+}
