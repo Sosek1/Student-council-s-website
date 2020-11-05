@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt</title>
+
+    <script src="https://kit.fontawesome.com/2e3d9b3214.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.
+    min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/main.css">
+
+</head>
+
+<body>
+    <div class="container-fluid ">
+        <nav class="navbar navbar-expand-md  menuBar">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/122494847_684632755489809_2685132707533486605_n.png" class="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="link" href="about.html">Poznaj nas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="link" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="link" href="discounts.html">Zniżki</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="link" href="contact.html">Kontakt</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <section class="contact">
+            <form id="myForm" class="rounded">
+
+                <h1>Napisz do nas !</h1>
+
+                <input id="name" type="text" placeholder="Imię i nazwisko">
+
+                <input id="email" type="text" placeholder="E-mail">
+
+                <input id="subject" type="text" placeholder="Temat">
+
+                <textarea id="body" class="rounded" rows="5" placeholder="Napisz wiadomość..."></textarea>
+
+                <div class="buttonNote">
+                    <button type="button" class="rounded" onclick="sendEmail()" value="Send An Email">Wyślij</button>
+
+                    <i id="note" class="fas fa-music"></i>
+                </div>
+
+            </form>
+
+        </section>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, numquam impedit tempora error
+                    perferendis, ab quod veritatis necessitatibus modi itaque animi id ea dolorem saepe consequuntur
+                    incidunt dolor a nulla.</p>
+
+            </div>
+        </div>
+        <footer>
+            <p>Copyright &copy; 2020 SU XLII Lo Kraków </p>
+        </footer>
+    </div>
+    <script src="modal.js"></script>
+    <script src="main.js"></script>
+    <script src="sendMail.js"></script>
+</body>
+
+</html>

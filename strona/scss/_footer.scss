@@ -1,0 +1,12 @@
+footer {
+    height: 5vh;
+    background: $third-color;
+    @include center;
+
+
+    p {
+        margin: 0;
+        color: $second-color;
+        font-family: $font-style;
+    }
+}
