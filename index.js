@@ -1,6 +1,7 @@
 const express = require('express');
 const nodemailer = require('nodemailer');
 const bodyParser = require('body-parser');
+const dotenv = require('dotenv').config({ path: __dirname + '/.env' });
 
 const app = express();
 app.use(bodyParser.json());
@@ -15,17 +16,17 @@ app.get('/', (req, res) => {
 // Send mail
 async function sendMail(message) {
 	const transporter = nodemailer.createTransport({
-		host: "smtp.ethereal.email",
-		port: 587,
-		secure: false, // true for port 465
+		host: process.env.SMTP_HOST,
+		port: parseInt(process.env.SMTP_PORT),
+		secure: process.env.SMTP_SECURE == "true", // true for port 465
 		auth: {
-			user: "derrick98@ethereal.email",
-			pass: "7an6PRWGx2BXxmYHXy"
+			user: process.env.SMTP_USER,
+			pass: process.env.SMTP_PASSWORD
 		}
 	})
 
-	//const info = await transporter.sendMail(message);
-	//console.log("View message: " + nodemailer.getTestMessageUrl(info));
+	const info = await transporter.sendMail(message);
+	console.log("Message sent: " + nodemailer.getTestMessageUrl(info));
 }
 
 // Contact us
@@ -37,7 +38,7 @@ app.route('/contact-us')
 	// I would really love to make it more secure but I don't give away free labour, why would I? This stuff costs money.
 	const message = {
 		from: req.body.email, 
-		to: "test@test.com",
+		to: process.env.CONTACT_MAIL,
 		subject: "Contact: " + req.body.topic,
 		text: req.body.text
 	}
@@ -61,7 +62,8 @@ app.use(function (req, res) {
 });
 
 // Listening
-const port = 3000;
+const port = process.env.APP_PORT;
 app.listen(port, () => {
+	console.log(typeof process.env.SMTP_PORT)
 	console.log(`Example app listening at http://localhost:${port}`);
 });
