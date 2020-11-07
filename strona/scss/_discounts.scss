@@ -2,58 +2,44 @@
 
 .discounts {
     .image {
-
         position: relative;
         overflow-x: hidden;
-
-        .stripe {
-            position: absolute;
-            bottom: 0;
-            height: 20px;
-            width: 100%;
-            background: $third-color;
-        }
     }
 
     .hardrock {
-        background: url(../img/image6.jpeg) center;
-        background-size: cover;
-        background-color: #444444;
+        background: url(../img/Hard_Rock_Cafe_-_wspolpraca.jpg) center;
+        background-size: 95%;
+        background-repeat: no-repeat;
     }
 
-    .hardrock2 {
-        background: url(../img/imag5.jpeg) center right;
-        background-size: cover;
-        background-color: #444444;
-    }
 
     .starbucks {
-        background: url();
-        background-size: cover;
-        background-color: #444444;
+        background: url(../img/starbucks_-_wspolpraca.jpg) center;
+        background-size: 95%;
+        background-repeat: no-repeat;
     }
 
     .gym {
-        background: url();
-        background-size: cover;
-        background-color: #444444;
+        background: url(../img/RK_-_wspolpraca.jpg) center;
+        background-size: 95%;
+        background-repeat: no-repeat;
     }
 
     .restaurant {
-        background: url();
-        background-size: cover;
-        background-color: #444444;
+        background: url(../img/Mamma_mia_-_wspolpraca.jpg) center;
+        background-size: 95%;
+        background-repeat: no-repeat;
     }
 
     .restaurant2 {
-        background: url();
-        background-size: cover;
-        background-color: #444444;
+        background: url(../img/RetroInk_-_wspolpraca.jpg) center;
+        background-size: 95%;
+        background-repeat: no-repeat;
     }
 
     .club {
-        background: url();
-        background-size: cover;
-        background-color: #444444;
+        background: url(../img/RIN_-_wspolpraca.jpg) center;
+        background-size: 95%;
+        background-repeat: no-repeat;
     }
 }

@@ -1,0 +1,26 @@
+@include media-sm {}
+
+@include media-md {
+    .wrapper {
+        display: none;
+    }
+
+    .wraperMobile {
+        display: flex;
+    }
+}
+
+@include media-lg {
+    .wrapper {
+        display: flex;
+        flex-wrap: nowrap;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .wraperMobile {
+        display: none;
+    }
+}
+
+@include media-xl {}

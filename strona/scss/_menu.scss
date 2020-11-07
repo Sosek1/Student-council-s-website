@@ -1,8 +1,3 @@
-img {
-    height: 10vh;
-}
-
-
 .link {
     padding: 0 1rem;
     color: $second-color;
@@ -17,4 +12,8 @@ img {
 
 .menuBar {
     background: $main-color;
+}
+
+.blog-menuBar {
+    background: $third-color;
 }

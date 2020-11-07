@@ -22,7 +22,7 @@
 
 
     .menuBar {
-        height: 15vh;
+        min-height: 15vh;
     }
 
     .bar {
@@ -138,14 +138,8 @@
         }
     }
 
-    .navbar-brand {
-        img {
-            height: 12.5vh;
-        }
-    }
-
     .menuBar {
-        height: 12.5vh;
+        min-height: 12.5vh;
     }
 
     .bar {
@@ -186,7 +180,7 @@
 
     .discounts {
         .image {
-            height: 70vh;
+            height: 80vh;
         }
     }
 
@@ -261,7 +255,7 @@
 
     .discounts {
         .image {
-            height: 50vh;
+            height: 40vh;
         }
     }
 
@@ -296,6 +290,12 @@
         }
     }
 
+    .discounts {
+        .image {
+            height: 55vh;
+        }
+    }
+
 }
 
 @include media-sm-landscape {
@@ -327,6 +327,14 @@
             p {
                 font-size: .8rem;
             }
+        }
+    }
+
+    //discounts
+
+    .discounts {
+        .image {
+            height: 200vh;
         }
     }
 }

@@ -1,0 +1,95 @@
+.blog-bg {
+    background-color: $second-color;
+}
+
+.wrapper {
+    .column1 {
+        width: 60%;
+        height: 100%;
+
+        .row1 {
+            width: 100%;
+            height: 60%;
+
+            .col1 {
+                height: 100%;
+                width: 50%;
+                background-color: blue;
+            }
+
+            .col2 {
+                height: 100%;
+                width: 50%;
+
+                .col3 {
+                    width: 100%;
+                    height: 50%;
+                    background-color: red;
+                }
+
+                .col4 {
+                    width: 100%;
+                    height: 50%;
+                    background-color: black;
+                }
+            }
+        }
+
+        .row2 {
+            width: 100%;
+            height: 40%;
+            background-color: green;
+        }
+    }
+
+    .column2 {
+        width: 40%;
+        height: 100%;
+
+        .row3 {
+            width: 100%;
+            height: 55%;
+
+            .col5 {
+                width: 50%;
+                height: 100%;
+                background-color: purple;
+            }
+
+            .col6 {
+                width: 50%;
+                height: 100%;
+                background-color: pink;
+            }
+        }
+
+        .row4 {
+            width: 100%;
+            height: 45%;
+            background-color: orange;
+        }
+    }
+
+}
+
+.wraperMobile {
+    display: flex;
+    width: 100%;
+    height: 700vh;
+
+
+    .div {
+        height: 50vh;
+        width: 100%;
+        position: relative;
+
+        .yellowbar {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 15%;
+            background: $third-color;
+        }
+    }
+}
