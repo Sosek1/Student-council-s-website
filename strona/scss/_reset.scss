@@ -8,4 +8,30 @@
     margin: 0;
     padding: 0;
     height: 100vh;
+
+    a::selection {
+        background-color: $fourth-color;
+    }
+
+    img::selection {
+        background-color: $fourth-color
+    }
+
+    h1::selection {
+        background-color: $fourth-color;
+    }
+
+    h2::selection {
+        background-color: $fourth-color;
+    }
+
+    h3::selection {
+        background-color: $fourth-color;
+    }
+
+    p::selection {
+        background-color: $fourth-color;
+    }
+
+
 }

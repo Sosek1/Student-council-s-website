@@ -21,8 +21,20 @@
     }
 
 
-    .menuBar {
-        min-height: 15vh;
+    // .menuBar {
+    //     min-height: 15vh;
+    // }
+
+    nav {
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+    }
+
+    .menu-drop {
+        display: flex;
     }
 
     .bar {
@@ -30,6 +42,19 @@
     }
 
     footer {
+        .iconbox {
+            width: 10%;
+        }
+
+        p {
+            font-size: .7rem;
+            width: 90%;
+        }
+
+
+    }
+
+    .footerHomepage {
         p {
             font-size: .7rem;
         }
@@ -70,7 +95,7 @@
 
     .discounts {
         .image {
-            height: 70vh;
+            height: 60vh;
         }
     }
 
@@ -138,15 +163,27 @@
         }
     }
 
-    .menuBar {
-        min-height: 12.5vh;
-    }
+    // .menuBar {
+    //     min-height: 12.5vh;
+    // }
 
     .bar {
         height: 12.5vh;
     }
 
     footer {
+
+        .iconbox {
+            width: 5%;
+        }
+
+        p {
+            width: 95%;
+            font-size: 1rem;
+        }
+    }
+
+    .footerHomepage {
         p {
             font-size: 1rem;
         }
@@ -221,7 +258,6 @@
         }
     }
 
-
 }
 
 @include media-lg {
@@ -248,6 +284,10 @@
         p {
             font-size: 1rem;
         }
+
+        i {
+            font-size: 2rem;
+        }
     }
 
 
@@ -259,6 +299,22 @@
         }
     }
 
+    nav {
+        height: 12.5vh;
+        display: flex;
+
+        img {
+            height: 90px;
+        }
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .menu-drop {
+        display: none;
+    }
 
 }
 
@@ -336,5 +392,9 @@
         .image {
             height: 200vh;
         }
+    }
+
+    .menu {
+        height: 25vh;
     }
 }

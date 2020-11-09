@@ -10,40 +10,49 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
     <link rel="stylesheet" href="./css/main.css">
 </head>
 
 <body>
-    <div class="container-fluid bg">
-        <nav class="navbar navbar-expand-md navbar-dark menuBar">
-            <a class="navbar-brand" href="index.html">
-                <img src="img/122494847_684632755489809_2685132707533486605_n.png" style="max-height: 90px;">
+    <div class="menu-drop ">
+        <div class="menu-bar black">
+            <a href="index.html">
+                <img class="ml-4" src="./img/122494847_684632755489809_2685132707533486605_n.png" alt="">
             </a>
+        </div>
+        <div class="list black2">
+            <a href="about.html">Poznaj nas</a>
+            <a href="discounts.html">Zniżki </a>
+            <a href="blogHomepage.html">Blog</a>
+            <a href="contact.html">Kontakt</a>
+        </div>
+        <div class="menu-IconBar black">
+            <a class="mr-4 " href="https://www.instagram.com/su_42lo/"><i class="fab fa-instagram yellowc"></i></a>
+            <a href="https://www.facebook.com/groups/499859403913734"><i class="fab fa-facebook-f yellowc"></i></a>
+        </div>
+    </div>
+    <div class="container-fluid bg">
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColl"
-                aria-controls="navbarColl" aria-expanded="false">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarColl">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item mx-sm-0 mx-md-3">
-                        <a class="link" href="discounts.html">Zniżki</a>
-                    </li>
-                    <li class="nav-item mx-sm-0 mx-md-3">
-                        <a class="link" href="">Blog</a>
-                    </li>
-                    <li class="nav-item mx-sm-0 mx-md-3">
-                        <a class="link" href="about.html">Poznaj nas</a>
-                    </li>
-                    <li class="nav-item mx-sm-0 mx-md-3">
-                        <a class="link" href="contact.html">Kontakt</a>
-                    </li>
-                </ul>
-            </div>
+        <nav class="black">
+            <a href="index.html">
+                <img class="ml-4" src="./img/122494847_684632755489809_2685132707533486605_n.png" alt="">
+            </a>
+            <ul class="mr-4 mb-0">
+                <a class="yellowc" href="about.html">Poznaj nas</a>
+                <a class="yellowc" href="discounts.html">Zniżki </a>
+                <a class="yellowc" href="blogHomepage.html">Blog</a>
+                <a class="yellowc" href="contact.html">Kontakt</a>
+            </ul>
         </nav>
 
+        <div class="menu black">
+            <a href="index.html">
+                <img class="ml-4" src="./img/122494847_684632755489809_2685132707533486605_n.png" alt="">
+            </a>
+            <div class="burger mr-4">
+                <span class="burger__bars"></span>
+            </div>
+        </div>
 
         <div class="banner">
             <div class="brightness"></div>
@@ -54,10 +63,10 @@
             </div>
         </div>
         <div class="bar">
-            <i class="fab fa-instagram"></i>
-            <i class="fab fa-facebook-f"></i>
+            <a href="https://www.instagram.com/su_42lo/"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/groups/499859403913734"><i class="fab fa-facebook-f"></i></a>
         </div>
-        <footer>
+        <footer class="footerHomepage">
             <p>Copyright &copy; 2020 SU XLII Lo Kraków </p>
         </footer>
     </div>
@@ -71,7 +80,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
     </script>
-    <script src="main.js"></script>
+    <script src="menu.js"></script>
+
 </body>
 
 </html>

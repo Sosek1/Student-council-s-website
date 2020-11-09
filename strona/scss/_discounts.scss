@@ -4,6 +4,11 @@
     .image {
         position: relative;
         overflow-x: hidden;
+        @include transition-ease;
+    }
+
+    .image:hover {
+        transform: scale(1.05);
     }
 
     .hardrock {

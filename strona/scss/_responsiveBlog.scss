@@ -1,25 +1,119 @@
-@include media-sm {}
+@include media-sm {
+    .blogH1 {
+        font-size: 2rem;
+    }
 
-@include media-md {
-    .wrapper {
+    .wrapperDesktop {
         display: none;
     }
 
-    .wraperMobile {
+    .wrapperMobile {
         display: flex;
+    }
+
+    .yellowbar {
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 60px;
+    }
+
+    .topBar {
+        h1 {
+            font-size: .8rem;
+            margin: 10px;
+        }
+
+        img {
+            margin: 10px;
+        }
+    }
+
+    .blogH1 {
+        font-size: 2rem;
+    }
+
+    .articleWrapper {
+        .title {
+            font-size: 2rem;
+        }
+
+        .autor {
+
+            h3 {
+                font-size: 1rem;
+            }
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+        }
     }
 }
 
-@include media-lg {
-    .wrapper {
-        display: flex;
-        flex-wrap: nowrap;
-        width: 100%;
-        height: 100vh;
+@include media-md {
+
+
+    .wrapperDesktop {
+        display: none;
     }
 
-    .wraperMobile {
+    .wrapperMobile {
+        display: flex;
+    }
+
+
+}
+
+@include media-lg {
+
+    .wrapperDesktop {
+        display: flex;
+    }
+
+    .wrapperMobile {
         display: none;
+    }
+
+    .yellowbar {
+        bottom: 5px;
+        left: 5px;
+        right: 5px;
+        width: calc(100% - 10px);
+        height: 60px;
+    }
+
+    .topBar {
+        h1 {
+            font-size: 1.5rem;
+        }
+    }
+
+    .blogH1 {
+        font-size: 3rem;
+    }
+
+    .articleWrapper {
+
+        .title {
+            font-size: 4rem;
+        }
+
+        .autor {
+            .awatar {}
+
+            h3 {
+                font-size: 1.5rem;
+            }
+        }
+
+        .subtitle {
+            font-size: 1.5rem;
+        }
+
+        .graphic {}
+
+        .text {}
     }
 }
 

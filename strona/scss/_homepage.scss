@@ -55,10 +55,19 @@
     background: $main-color;
     @include center;
 
-    i {
-        font-size: 2rem;
-        color: $third-color;
-        padding: 1rem;
-        z-index: 3;
+    a {
+        i {
+            font-size: 2rem;
+            color: $third-color;
+            padding: 1rem;
+            z-index: 3;
+            @include transition-ease;
+        }
+    }
+
+
+
+    i:hover {
+        transform: scale(1.5);
     }
 }
