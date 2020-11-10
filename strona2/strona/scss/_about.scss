@@ -1,0 +1,79 @@
+body {
+    font-family: $font-style;
+}
+
+.header {
+    @include center;
+
+    h1 {
+        font-family: $font-style;
+        font-weight: bold;
+        color: $third-color;
+    }
+}
+
+
+
+.about {
+
+
+    .img {
+        background-color: $main-color;
+    }
+
+    .bartek {
+        background: url(../img/_DSC4453.jpg);
+        background-size: cover;
+    }
+
+    .ania {
+        background: url(../img/_DSC4459.jpg);
+        background-size: cover;
+    }
+
+    .aga {
+        background: url(../img/_DSC4462.jpg);
+        background-size: cover;
+    }
+
+    .karolina {
+        background: url(../img/Karolina-Stasińska.jpg);
+        background-size: cover;
+    }
+
+    .krzysiek {
+        background: url(../img/_DSC4498.jpg);
+        background-size: cover;
+    }
+
+    .ala {
+        background: url(../img/_DSC4481.jpg);
+        background-size: cover;
+    }
+
+    .emilia {
+        background: url(../img/_DSC4467.jpg);
+        background-size: cover;
+    }
+
+    .text {
+        background-color: $main-color;
+
+        h1 {
+            color: $third-color;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        h2 {
+            color: $second-color;
+            margin: 0 auto;
+        }
+
+        p {
+            color: $second-color;
+            margin: 0 auto;
+            text-align: center;
+        }
+    }
+}
