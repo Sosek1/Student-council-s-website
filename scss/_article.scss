@@ -1,0 +1,96 @@
+body {
+    h1::selection {
+        background-color: $third-color;
+    }
+
+    h2::selection {
+        background-color: $third-color;
+    }
+
+    h3::selection {
+        background-color: $third-color;
+    }
+
+    p::selection {
+        background-color: $third-color;
+    }
+
+    i::selection {
+        background-color: $third-color;
+    }
+
+    .topBar {
+        height: 10vh;
+        background: $third-color;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        h1 {
+            color: $second-color;
+            text-align: center;
+        }
+
+        img {
+            height: 90%;
+        }
+    }
+
+    .articleWrapper {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        width: 80%;
+        margin: 0 auto;
+
+
+        .title {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .autor {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            height: 10vh;
+            width: 100%;
+
+            .awatar {
+                width: 70px;
+                height: 70px;
+                border-radius: 50px;
+                background: $third-color;
+            }
+
+            h3 {}
+        }
+
+        .subtitle {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .graphic {
+            width: 100%;
+            height: 50vh;
+            background: url(../img/breakfast-1869772_640.jpg) center;
+            background-size: cover;
+        }
+
+        .text {
+            width: 100%;
+            min-height: 50vh;
+
+            p {
+                text-align: center;
+            }
+        }
+    }
+}

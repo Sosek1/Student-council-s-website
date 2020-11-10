@@ -1,0 +1,51 @@
+footer {
+    height: 5vh;
+    background: $third-color;
+    @include center;
+
+    p {
+        margin: 0;
+        color: $second-color;
+        font-family: $font-style;
+    }
+
+    .iconbox {
+        @include center;
+
+        a {
+            @include center;
+            text-decoration: none;
+
+            i {
+                color: $second-color;
+                justify-content: center;
+                @include transition-ease;
+            }
+
+            i:hover {
+                color: $fourth-color;
+            }
+        }
+
+
+    }
+
+}
+
+.footerHomepage {
+    height: 5vh;
+    background: $third-color;
+    @include center;
+
+    p {
+        margin: 0;
+        color: $second-color;
+        font-family: $font-style;
+        @include center;
+    }
+}
+
+.footerArticle {
+    height: 80px;
+
+}

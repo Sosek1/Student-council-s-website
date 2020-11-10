@@ -1,0 +1,41 @@
+@mixin center {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+@mixin transition-ease {
+    transition: all 0.5s ease-in-out;
+}
+
+
+
+@mixin media-sm {
+    @media screen and (min-width: 280px) {
+        @content;
+    }
+}
+
+@mixin media-md {
+    @media screen and (min-width: 768px) {
+        @content;
+    }
+}
+
+@mixin media-lg {
+    @media screen and (min-width: 992px) {
+        @content;
+    }
+}
+
+@mixin media-xl {
+    @media screen and (min-width: 1200px) {
+        @content;
+    }
+}
+
+@mixin media-sm-landscape {
+    @media screen and (max-width:900px) and (orientation:landscape) {
+        @content;
+    }
+}
