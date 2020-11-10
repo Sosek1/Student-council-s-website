@@ -16,206 +16,89 @@ min.js"></script>
 
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
     <link rel="stylesheet" href="./css/main.css">
 
 </head>
 
 <body>
-    <div class="menu-drop">
-        <div class="menu-bar yellow">
-            <a href="index.html">
-                <img class="ml-4" src="./img/122494847_684632755489809_2685132707533486605_n.png" alt="">
-            </a>
-        </div>
-        <div class="list white">
-            <a href="about.html">Poznaj nas</a>
-            <a href="discounts.html">Zniżki </a>
-            <a href="blogHomepage.html">Blog</a>
-            <a href="contact.html">Kontakt</a>
-        </div>
-        <div class="menu-IconBar yellow">
-            <a class="mr-4" href="https://www.instagram.com/su_42lo/"><i class="fab fa-instagram whitec"></i></a>
-            <a href="https://www.facebook.com/groups/499859403913734"><i class="fab fa-facebook-f whitec"></i></a>
-        </div>
-    </div>
-    <div class="container-fluid">
+    <div class="container-fluid blog-bg">
 
-        <nav class=" yellow">
-            <a href="index.html">
-                <img class="ml-4" src="./img/122494847_684632755489809_2685132707533486605_n.png" alt="">
+        <nav class="navbar navbar-expand-md navbar-light blog-menuBar">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/122494847_684632755489809_2685132707533486605_n.png" style="max-height: 90px;">
             </a>
-            <ul class="mr-4 mb-0">
-                <a class="whitec" href="about.html">Poznaj nas</a>
-                <a class="whitec" href="discounts.html">Zniżki </a>
-                <a class="whitec" href="blogHomepage.html">Blog</a>
-                <a class="whitec" href="contact.html">Kontakt</a>
-            </ul>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColl"
+                aria-controls="navbarColl" aria-expanded="false">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarColl">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item mx-sm-0 mx-md-3">
+                        <a class="link" href="discounts.html">Zniżki</a>
+                    </li>
+                    <li class="nav-item mx-sm-0 mx-md-3">
+                        <a class="link" href="">Blog</a>
+                    </li>
+                    <li class="nav-item mx-sm-0 mx-md-3">
+                        <a class="link" href="about.html">Poznaj nas</a>
+                    </li>
+                    <li class="nav-item mx-sm-0 mx-md-3">
+                        <a class="link" href="contact.html">Kontakt</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
 
-        <div class="menu  yellow">
-            <a href="index.html">
-                <img class="ml-4" src="./img/122494847_684632755489809_2685132707533486605_n.png" alt="">
-            </a>
-            <div class="burger mr-4">
-                <span class="burger__bars"></span>
+        <div class="row m-2 d-flex wrapper">
+            <div class="col-lg-7 p-0 mr-2 d-flex flex-column column1">
+                <div class="row d-flex no-gutters row1">
+                    <div class="col  mr-2 col1">
+                    </div>
+                    <div class="col d-flex flex-column p-0 col2">
+                        <div class="col mb-2 p-0 col3"></div>
+                        <div class="col p-0 col4"></div>
+                    </div>
+                </div>
+                <div class="row mt-2 no-gutters row2"></div>
+            </div>
+            <div class="col-lg-5 p-0 d-flex flex-column column2">
+                <div class="col p-0 d-flex row3">
+                    <div class="col mr-2 p-0 col5"></div>
+                    <div class="col p-0 col6"></div>
+                </div>
+                <div class="col mt-2 p-0 row4"></div>
             </div>
         </div>
 
-
-        <div class="row m-4">
-            <h1 class="blogH1">Strona główna</h1>
-        </div>
-
-        <div class="row no-gutters wrapperDesktop" style="height: calc(100vh - 12.5vh - 10px); margin: 5px;">
-            <div class="col-xl-7">
-                <div class="row no-gutters " style="height:60%">
-                    <!-- height-60 -->
-                    <div class="col-xl-6">
-                        <a href="articles.html">
-                            <div class="article"
-                                style="margin: 5px; height: calc(100% - 10px); width: calc(100% - 10px);">
-                                <div class="yellowbar">
-                                    <p>Artykuły</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-xl-6">
-                        <div class="row no-gutters" style="height:50%;">
-                            <!-- height-50 -->
-                            <div class="col-xl-12 h-100">
-                                <a href="felietons.html">
-                                    <div class="interview"
-                                        style="margin: 5px; height: calc(100% - 10px); width: calc(100% - 10px);">
-                                        <div class="yellowbar">
-                                            <p>Felietony</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-xl-12 h-100">
-                                <a href="interviews.html">
-                                    <div class="feuilleton"
-                                        style="margin: 5px; height: calc(100% - 10px); width: calc(100% - 10px);">
-                                        <div class="yellowbar">
-                                            <p>Wywiady</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+        <div class="row no-gutters  p-0 wraperMobile">
+            <div class="col m-2">
+                <div class="div article ">
+                    <div class="yellowbar"></div>
                 </div>
-                <div class="row no-gutters" style="height:40%;">
-                    <!-- height-40 -->
-                    <a href="reviews.html">
-                        <div class="story " style="margin: 5px;  height: calc(100% - 10px); width: calc(100% - 10px);">
-                            <div class="yellowbar">
-                                <p>Recenzje</p>
-                            </div>
-                        </div>
-                    </a>
+                <div class="div feuilleton ">
+                    <div class="yellowbar"></div>
                 </div>
-            </div>
-
-            <div class="col-xl-5">
-                <div class="row no-gutters" style="height:50%;">
-                    <!-- height-50 -->
-                    <div class="col-xl-6 h-100">
-                        <a href="stories.html">
-                            <div class="review"
-                                style="margin: 5px; height: calc(100% - 10px); width: calc(100% - 10px);">
-                                <div class="yellowbar">
-                                    <p>Opowiadania</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-xl-6 h-100">
-                        <div style="margin: 5px;  height: calc(100% - 10px); width: calc(100% - 10px);">
-                            <div class="yellowbar">
-                                <p>W sumie nie wiem</p>
-                            </div>
-                        </div>
-                    </div>
+                <div class="div interviews ">
+                    <div class="yellowbar"></div>
                 </div>
-                <div class="row no-gutters" style="height:50%;">
-                    <!--height-50 -->
-                    <a href="poetryCorner.html">
-                        <div class="poetryCorner"
-                            style="margin: 5px;  height: calc(100% - 10px); width: calc(100% - 10px);">
-                            <div class="yellowbar">
-                                <p>Kącik poetycki</p>
-                            </div>
-                        </div>
-                    </a>
+                <div class="div review ">
+                    <div class="yellowbar"></div>
                 </div>
-            </div>
-        </div>
-
-        <div class="row no-gutters  p-0 wrapperMobile">
-            <div class="col mx-2 mb-2">
-                <a href="articles.html">
-                    <div class="div mb-2 article ">
-                        <div class="yellowbar">
-                            <p>Artykuły</p>
-                        </div>
-                    </div>
-                </a>
-                <a href="felietons.html">
-                    <div class="div  mb-2 feuilleton ">
-                        <div class="yellowbar">
-                            <p>Felietony</p>
-                        </div>
-                    </div>
-                </a>
-                <a href="interviews.html">
-                    <div class="div mb-2 interview ">
-                        <div class="yellowbar">
-                            <p>Wywiady</p>
-                        </div>
-                    </div>
-                </a>
-                <a href="reviews.html">
-                    <div class="div mb-2 review ">
-                        <div class="yellowbar">
-                            <p>Recenzje</p>
-                        </div>
-                    </div>
-                </a>
-                <a href="stories.html">
-                    <div class="div  mb-2 story ">
-                        <div class="yellowbar">
-                            <p>Opowiadania</p>
-                        </div>
-                    </div>
-                </a>
-                <a href="poetryCorner.html">
-                    <div class="div mb-2 poetryCorner">
-                        <div class="yellowbar">
-                            <p>Kącik poetycki</p>
-                        </div>
-                    </div>
-                </a>
+                <div class="div story ">
+                    <div class="yellowbar"></div>
+                </div>
+                <div class="div poetryCorner">
+                    <div class="yellowbar"></div>
+                </div>
                 <div class="div">
-                    <div class="yellowbar">
-                        <p>W sumie nie wiem</p>
-                    </div>
+                    <div class="yellowbar"></div>
                 </div>
             </div>
         </div>
-        <footer>
-            <p class="ml-2">Copyright &copy; 2020 SU XLII Lo Kraków </p>
-            <div class="iconbox mr-2">
-                <a class="mr-3" href="https://www.instagram.com/su_42lo/"><i class="fab fa-instagram"></i></a>
-                <a class="mr-3" href="https://www.facebook.com/groups/499859403913734"><i
-                        class="fab fa-facebook-f"></i></a>
-            </div>
-        </footer>
+
     </div>
-    <script src="menu.js"></script>
 </body>
 
 </html>
