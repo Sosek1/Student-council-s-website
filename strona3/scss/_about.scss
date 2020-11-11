@@ -1,0 +1,106 @@
+body {
+    font-family: $font-style;
+}
+
+.header {
+    @include center;
+
+    h1 {
+        font-family: $font-style;
+        font-weight: bold;
+        opacity: 0;
+        animation: fade 2s 2s linear forwards;
+        color: $third-color;
+    }
+}
+
+
+
+.about {
+
+
+    .img {
+        background-color: $main-color;
+    }
+
+    .bartek {
+        background: url(../img/1111.png) center center;
+        background-size: cover;
+        opacity: 0;
+        animation: fade 2s 3s linear forwards;
+    }
+
+    .ania {
+        background: url(../img/_DSC4459-min.png);
+        background-size: cover;
+    }
+
+    .aga {
+        background: url(../img/_DSC4462-min.png);
+        background-size: cover;
+    }
+
+    .karolina {
+        background: url(../img/w6ra57k1.png);
+        background-size: cover;
+    }
+
+    .krzysiek {
+        background: url(../img/_DSC4498.png);
+        background-size: cover;
+    }
+
+    .ala {
+        background: url(../img/_DSC4481-min.png);
+        background-size: cover;
+    }
+
+    .emilia {
+        background: url(../img/_dsc4467_optimized-min.png);
+        background-size: cover;
+    }
+
+    .michal {
+        background: url(../img/IMG_2717.png);
+        background-size: cover;
+    }
+
+    .bartosz {
+        background: url(../img/IMG_2695.png);
+        background-size: cover;
+    }
+
+    .szymek {
+        background: url(../img/DSC_3375-min.png) center;
+        background-size: 80%;
+        background-repeat: no-repeat;
+    }
+
+    .tomek {
+        background: url(../img/IMG_2749.png)center;
+        background-size: cover;
+    }
+
+    .text {
+        background-color: $main-color;
+        opacity: 0;
+        animation: fade 2s 3s linear forwards;
+
+        h1 {
+            color: $third-color;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        h2 {
+            color: $second-color;
+            margin: 0 auto;
+        }
+
+        p {
+            color: $second-color;
+            margin: 0 auto;
+            text-align: center;
+        }
+    }
+}

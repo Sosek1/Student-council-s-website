@@ -1,0 +1,78 @@
+//header in _about
+
+.discounts {
+    .image {
+        position: relative;
+        overflow-x: hidden;
+        @include transition-ease;
+    }
+
+    .image:hover {
+        transform: scale(1.05);
+    }
+
+    .hardrock {
+        background: url(../img/Hard_Rock_Cafe_-_wspolpraca.jpg) center;
+        background-size: 95%;
+        background-repeat: no-repeat;
+        opacity: 0;
+        animation: fade 1s 3s linear forwards;
+    }
+
+
+    .starbucks {
+        background: url(../img/starbucks_-_wspolpraca.jpg) center;
+        background-size: 95%;
+        background-repeat: no-repeat;
+        opacity: 0;
+        animation: fade 1s 3.5s linear forwards;
+    }
+
+    .gym {
+        background: url(../img/RK_-_wspolpraca.jpg) center;
+        background-size: 95%;
+        background-repeat: no-repeat;
+        opacity: 0;
+        animation: fade 1s 4s linear forwards;
+    }
+
+    .restaurant {
+        background: url(../img/Mamma_mia_-_wspolpraca.jpg) center;
+        background-size: 95%;
+        background-repeat: no-repeat;
+        opacity: 0;
+        animation: fade 1s 4.5s linear forwards;
+    }
+
+    .restaurant2 {
+        background: url(../img/RetroInk_-_wspolpraca.jpg) center;
+        background-size: 95%;
+        background-repeat: no-repeat;
+        opacity: 0;
+        animation: fade 1s 5s linear forwards;
+    }
+
+    .club {
+        background: url(../img/RIN_-_wspolpraca.jpg) center;
+        background-size: 95%;
+        background-repeat: no-repeat;
+        opacity: 0;
+        animation: fade 1s 5.5s linear forwards;
+    }
+
+    .drivingLicens {
+        background: url(../img/Quattro_-_wspolpraca.jpg) center;
+        background-size: 95%;
+        background-repeat: no-repeat;
+        opacity: 0;
+        animation: fade 1s 6s linear forwards;
+    }
+
+    .barber {
+        background: url(../img/Barber_house_-_wspolpraca.jpg) center;
+        background-size: 95%;
+        background-repeat: no-repeat;
+        opacity: 0;
+        animation: fade 1s 6.5s linear forwards;
+    }
+}
