@@ -1,0 +1,3 @@
+# Przewodniczący sekcji dziennikarskiej
+## Michał Grzesiński
+Na korytarzach naszej szkoły mogliście mieć już możliwość spotkać Michała. Jego wygląd może tego nie sugerować, ale jego największym talentem jest biegłość w obsłudze słowa pisanego. Kiedy nie pisze, to zazwyczaj czyta, aby udoskonalić swój warsztat, na zmianę z słuchaniem muzyki i gotowaniem. Ma nadzieję, że w naszej szkole znajduje się mnóstwo młodych artystów, aby móc podziwiać ich prace oraz konsultować różnego rodzaju projekty. Poza tym jest pasjonatem kultury Internetu, teatru, Rammsteina i mitologii wszelakich.

@@ -1,0 +1,30 @@
+- const title = "Strona Główna";
+
+doctype html
+html( lang="pl" )
+	include elements/head.pug
+
+	body
+		include elements/menu-drop.pug
+
+		.container-fluid.bg
+			include elements/nav.pug
+
+			.banner( style="background-image: url(/img/homepage.jpg);" )
+				.brightness
+
+				.headings
+					h1 Samorząd Uczniowski
+					h2 XLII LO
+					h3 "Per aspera ad astra"
+			
+			.bar
+				a( href="https://www.instagram.com/su_42lo/" )
+					i.fab.fa-instagram.yellowc
+				a.mr-3( href="https://www.facebook.com/groups/499859403913734" )
+					i.fab.fa-facebook-f.yellowc
+			
+			footer.footerHomepage
+				p Copyright &copy; 2020 SU XLII LO Kraków
+	
+	include elements/scripts.pug

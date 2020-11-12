@@ -4,8 +4,11 @@
 
 form {
     display: flex;
+    // justify-content: center;
     flex-direction: column;
     background-color: $third-color;
+    opacity: 0;
+    animation: fade 1s 1.5s linear forwards;
 
     h1 {
         height: 10%;
@@ -68,6 +71,53 @@ form {
 
 }
 
+.icons {
+    // width: 100%;
+    // height: 100vh;
+
+    .row {
+        width: 100%;
+        height: 50%;
+
+        .icon1 {
+            border: 2px solid $third-color;
+            opacity: 0;
+            animation: fade 1s 2s linear forwards;
+
+            a {
+                @include center;
+                flex-direction: column;
+                filter: brightness(.5);
+                @include transition-ease;
+                height: 100%;
+
+                .iconbox2 {
+                    @include center;
+                    height: 70%;
+                    width: 100%;
+                    text-decoration: none;
+                }
+
+                h1 {
+                    height: 30%;
+                    color: $third-color;
+                    text-align: center;
+                    text-decoration: none;
+                }
+
+            }
+
+            a:hover {
+                filter: brightness(1);
+                cursor: pointer;
+                text-decoration: none;
+            }
+        }
+
+
+
+    }
+}
 
 
 @keyframes shake {

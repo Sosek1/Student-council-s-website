@@ -11,7 +11,7 @@ app.set('view engine', 'pug')
 
 // Main page
 app.get('/', (req, res) => {
-	res.sendFile(__dirname + "/views/index.html");
+	res.render("index");
 });
 
 // Send mail
@@ -49,7 +49,7 @@ app.route('/contact-us')
 
 // About us
 app.get('/about-us', (req, res) => {
-	res.sendFile(__dirname + "/views/about.html");
+	res.render("about-us")
 });
 
 // Discouns

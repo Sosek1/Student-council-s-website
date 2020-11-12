@@ -1,0 +1,3 @@
+# Twórca strony
+## Bartosz Sosin
+Jeśli już mówimy o stronie samorządu, nie powstałaby ona gdyby nie niesamowite zaangażowanie i pracowitość Bartosza Sosina. Ten młody programista pracuje z pasją i determinacją, a owoce jego kodowania możecie oglądać teraz na własne oczy. Poza programowaniem, które jest jego niezwykłą pasją. Bartek bardzo lubi muzykę, książki, gry kopmuterowe i sport, szczególnie piłkę nożną, z którą był związany przez ponad połowe życia. Jest osobą towarzyską i wytrwałą, więc bez problemu odnajduje się w strukturach naszej szkoły.

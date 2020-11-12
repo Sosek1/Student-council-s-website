@@ -1,5 +1,4 @@
 body {
-    background: $about-bg-color;
     font-family: $font-style;
 }
 
@@ -9,49 +8,30 @@ body {
     h1 {
         font-family: $font-style;
         font-weight: bold;
+        opacity: 0;
+        animation: fade 2s 2s linear forwards;
         color: $third-color;
     }
 }
 
 .about {
-
-
     .img {
-        background-color: $main-color;
-    }
-
-    .bartek {
-        background: url(../img/_DSC4453.jpg);
-        background-size: cover;
-    }
-
-    .ania {
-        background: url(../img/_DSC4459.jpg);
-        background-size: cover;
-    }
-
-    .aga {
-        background: url(../img/_DSC4462.jpg);
-        background-size: cover;
-    }
-
-    .krzysiek {
-        background: url(../img/_DSC4498.jpg);
-        background-size: cover;
-    }
-
-    .ala {
-        background: url(../img/_DSC4481.jpg);
-        background-size: cover;
-    }
-
-    .emilia {
-        background: url(../img/_DSC4467.jpg);
-        background-size: cover;
+		background-color: $main-color;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position-x: center;
+		opacity: 0;
+		animation: fade 2s 3s linear forwards;
     }
 
     .text {
         background-color: $main-color;
+        opacity: 0;
+		animation: fade 2s 3s linear forwards;
+		@extend .d-flex;
+		@extend .flex-column;
+		@extend .justify-content-around;
+		@extend .rounded;
 
         h1 {
             color: $third-color;
@@ -61,7 +41,8 @@ body {
 
         h2 {
             color: $second-color;
-            margin: 0 auto;
+			margin: 0 auto;
+			text-align: center;
         }
 
         p {

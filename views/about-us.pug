@@ -1,0 +1,130 @@
+- const title = "Poznaj nas";
+
+doctype html
+html( lang="pl" )
+	include elements/head.pug
+
+	body
+		include elements/menu-drop.pug
+
+		.container-fluid.bg
+			include elements/nav.pug
+
+			.row.header.my-5
+				h1 Poznaj nasz samorząd
+
+			section.about
+				//- Prezydent
+				.row.m-lg-5.mb-4
+					.col-sm-12.col-xl-6
+						.img.rounded(
+							style="background-image: url(/img/samorzad/prezydent.png); background-position: center;"
+						)
+					.col-sm-12.col-xl-6
+						.text
+							include:markdown-it samorzad/prezydent.md
+
+				//- Wiceprezydent
+				.row.m-lg-5.mb-4
+					.col-sm-12.col-xl-6
+						.img.rounded(
+							style="background-image: url(/img/samorzad/wiceprezydent.png);"
+						)
+					.col-sm-12.col-xl-6
+						.text
+							include:markdown-it samorzad/wiceprezydent.md
+
+				//- Sekretarz
+				.row.m-lg-5.mb-4
+					.col-sm-12.col-xl-6
+						.img.rounded(
+							style="background-image: url(/img/samorzad/sekretarz.png);"
+						)
+					.col-sm-12.col-xl-6
+						.text
+							include:markdown-it samorzad/sekretarz.md
+
+				//- Przewodniczący sekcji organizacyjnej
+				.row.m-lg-5.mb-4
+					.col-sm-12.col-xl-6
+						.img.rounded(
+							style="background-image: url(/img/samorzad/pso.png);"
+						)
+					.col-sm-12.col-xl-6
+						.text
+							include:markdown-it samorzad/pso.md
+
+				//- Przewodniczący sekcji plastyczno-promocyjnej
+				.row.m-lg-5.mb-4
+					.col-sm-12.col-xl-6
+						.img.rounded(
+							style="background-image: url(/img/samorzad/pspp.png);"
+						)
+					.col-sm-12.col-xl-6
+						.text
+							include:markdown-it samorzad/pspp.md
+
+				//- Przewodniczący sekcji wolontaryjno-charytatywnej
+				.row.m-lg-5.mb-4
+					.col-sm-12.col-xl-6
+						.img.rounded(
+							style="background-image: url(/img/samorzad/pswc.png);"
+						)
+					.col-sm-12.col-xl-6
+						.text
+							include:markdown-it samorzad/pswc.md
+
+				//- Przewodniczący sekcji dziennikarskiej
+				.row.m-lg-5.mb-4
+					.col-sm-12.col-xl-6
+						.img.rounded(
+							style="background-image: url(/img/samorzad/psd.png);"
+						)
+					.col-sm-12.col-xl-6
+						.text
+							include:markdown-it samorzad/psd.md
+
+				//- Twórca strony
+				.row.m-lg-5.mb-4
+					.col-sm-12.col-xl-6
+						.img.rounded(
+							style="background-image: url(/img/samorzad/tworca.png);"
+						)
+					.col-sm-12.col-xl-6
+						.text
+							include:markdown-it samorzad/tworca.md
+
+				//- Fotograf i grafik
+				.row.m-lg-5.mb-4
+					.col-sm-12.col-xl-6
+						.img.rounded(
+							style="background-image: url(/img/samorzad/fg.png); background-size: 50%;"
+						)
+					.col-sm-12.col-xl-6
+						.text
+							include:markdown-it samorzad/fg.md
+
+				//- Grafik i montarzysta
+				.row.m-lg-5.mb-4
+					.col-sm-12.col-xl-6
+						.img.rounded(
+							style="background-image: url(/img/samorzad/gm.png);"
+						)
+					.col-sm-12.col-xl-6
+						.text
+							include:markdown-it samorzad/gm.md
+
+				//- Opiekun samorządu
+				.row.m-lg-5.mb-4
+					.col-sm-12.col-xl-6
+						.img.rounded(
+							style="background-image: url(/img/samorzad/opiekun.png);"
+						)
+					.col-sm-12.col-xl-6
+						.text
+							include:markdown-it samorzad/opiekun.md
+			include elements/footer.pug
+				.iconbox.mr-2
+					include elements/social-media-links.pug
+
+	include elements/scripts.pug
