@@ -1,0 +1,101 @@
+- const title = "Kontakt"
+
+doctype html
+html( lang="pl" )
+	include elements/head.pug
+
+	body
+		include elements/menu-drop.pug
+
+		.container-fluid.bg
+			include elements/nav.pug
+
+			section.contact
+				form(
+					method="POST"
+					action="/contact-us"
+				)
+					h1.text-center Napisz do nas!
+
+					input#name(
+						type="text"
+						placeholder="Imię i nazwisko"
+					)
+
+					input#email(
+						type="email"
+						placeholder="E-mail"
+					)
+
+					input#subject(
+						type="text"
+						placeholder="Temat"
+					)
+
+					textarea#body.rounded(
+						rows="5"
+						placeholder="Napisz wiadomość..."
+					)
+
+					.buttonNote
+						button.rounded(
+							type="submit"
+						) Wyślij
+						i#note.fas.fa-music
+
+			section.row.no-gutters.icons
+				.row.no-gutters.d-flex
+					.col.icon1.p-0
+						a( href="https://www.facebook.com/lo42krakow/" )
+							.iconBox2
+								i.fab.fa-facebook-f.m-5
+
+							h1 XLII Liceum Ogólnokształcące w Krakowie
+
+					.col.icon1.p-0
+						a( href="https://www.facebook.com/groups/499859403913734" )
+							.iconBox2
+								i.fab.fa-facebook-f.m-5
+
+							h1 Spotted XLII LO
+
+					.col.icon1.p-0
+						a( href="http://lo42krakow.pl/" )
+							.iconBox2
+								i.fas.fa-file-code.m-5
+
+							h1 XLII Liceum Ogólnokształcące w Krakowie
+
+				.row.no-gutters.d-flex
+					.col.icon1.p-0
+						a( href="https://www.instagram.com/liceum42/" )
+							.iconBox2
+								i.fab.fa-facebook-f.m-5
+
+							h1 liceum42
+
+					.col.icon1.p-0
+						a( href="https://www.instagram.com/su_42lo/" )
+							.iconBox2
+								i.fab.fa-facebook-f.m-5
+
+							h1 su_42lo
+
+					.col.icon1.p-0
+						a( href="https://www.instagram.com/42lo_tellonym/" )
+							.iconBox2
+								i.fas.fa-file-code.m-5
+
+							h1 42lo_tellonym
+
+			#noteModal.modal
+				.modal-content
+					span#closeModal.close &times;
+					p Tego formularza możesz użyć do przesłania nam tytułu utworu, który chcesz posłuchać. Możesz również napisać dedykację, która zostanie odczytana.
+
+			include elements/footer.pug
+
+	include elements/scripts.pug
+	script(
+		src="modal.js"
+	)

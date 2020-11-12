@@ -5604,7 +5604,7 @@ button.bg-dark:focus {
 .my-2 {
   margin-top: 0.5rem !important; }
 
-.mr-2,
+.mr-2, footer .iconbox,
 .mx-2 {
   margin-right: 0.5rem !important; }
 
@@ -7547,7 +7547,7 @@ footer {
     font-size: 1.3rem;
     padding: 5rem; }
   .discounts .image {
-    height: 55vh; } }
+    height: 62.5vh; } }
 
 @media screen and (max-width: 900px) and (orientation: landscape) {
   .bar {
@@ -7688,65 +7688,37 @@ body {
 .discounts .image {
   position: relative;
   overflow-x: hidden;
-  transition: all 0.5s ease-in-out; }
+  transition: all 0.5s ease-in-out;
+  background-size: 95% !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  opacity: 0; }
 
 .discounts .image:hover {
   transform: scale(1.05); }
 
-.discounts .hardrock {
-  background: url(../img/Hard_Rock_Cafe_-_wspolpraca.jpg) center;
-  background-size: 95%;
-  background-repeat: no-repeat;
-  opacity: 0;
+.discounts .discount-1 {
   animation: fade 1s 3s linear forwards; }
 
-.discounts .starbucks {
-  background: url(../img/starbucks_-_wspolpraca.jpg) center;
-  background-size: 95%;
-  background-repeat: no-repeat;
-  opacity: 0;
+.discounts .discount-2 {
   animation: fade 1s 3.5s linear forwards; }
 
-.discounts .gym {
-  background: url(../img/RK_-_wspolpraca.jpg) center;
-  background-size: 95%;
-  background-repeat: no-repeat;
-  opacity: 0;
+.discounts .discount-3 {
   animation: fade 1s 4s linear forwards; }
 
-.discounts .restaurant {
-  background: url(../img/Mamma_mia_-_wspolpraca.jpg) center;
-  background-size: 95%;
-  background-repeat: no-repeat;
-  opacity: 0;
+.discounts .discount-4 {
   animation: fade 1s 4.5s linear forwards; }
 
-.discounts .restaurant2 {
-  background: url(../img/RetroInk_-_wspolpraca.jpg) center;
-  background-size: 95%;
-  background-repeat: no-repeat;
-  opacity: 0;
+.discounts .discount-5 {
   animation: fade 1s 5s linear forwards; }
 
-.discounts .club {
-  background: url(../img/RIN_-_wspolpraca.jpg) center;
-  background-size: 95%;
-  background-repeat: no-repeat;
-  opacity: 0;
+.discounts .discount-6 {
   animation: fade 1s 5.5s linear forwards; }
 
-.discounts .drivingLicens {
-  background: url(../img/Quattro_-_wspolpraca.jpg) center;
-  background-size: 95%;
-  background-repeat: no-repeat;
-  opacity: 0;
+.discounts .discount-7 {
   animation: fade 1s 6s linear forwards; }
 
-.discounts .barber {
-  background: url(../img/Barber_house_-_wspolpraca.jpg) center;
-  background-size: 95%;
-  background-repeat: no-repeat;
-  opacity: 0;
+.discounts .discount-8 {
   animation: fade 1s 6.5s linear forwards; }
 
 .contact {

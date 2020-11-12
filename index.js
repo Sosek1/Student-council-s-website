@@ -33,17 +33,17 @@ async function sendMail(message) {
 // Contact us
 app.route('/contact-us')
 .get((req, res) => {
-	res.sendFile(__dirname + "/views/contact.html");
+	res.render("contact-us");
 })
 .post((req, res) => {
 	// I would really love to make it more secure but I don't give away free labour, why would I? This stuff costs money.
 	const message = {
-		from: req.body.email, 
+		from: req.body.email,
 		to: process.env.CONTACT_MAIL,
 		subject: "Contact: " + req.body.topic,
 		text: req.body.text
 	}
-	sendMail(message);	
+	sendMail(message);
 	res.redirect('/')
 });
 
@@ -54,7 +54,7 @@ app.get('/about-us', (req, res) => {
 
 // Discouns
 app.get('/discounts', (req, res) => {
-	res.sendFile(__dirname + "/views/discounts.html");
+	res.render("discounts")
 });
 
 // Error 404
@@ -65,5 +65,5 @@ app.use(function (req, res) {
 // Listening
 const port = process.env.APP_PORT;
 app.listen(port, () => {
-	console.log(`Example app listening at http://localhost:${port}`);
-}); 
+	console.log(`App listening at http://localhost:${port}`);
+});

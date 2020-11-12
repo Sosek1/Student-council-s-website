@@ -13,10 +13,11 @@ footer {
 
     .iconbox {
         @include center;
+		@extend .mr-2;
 
         a {
             @include center;
-            text-decoration: none;
+			text-decoration: none;
 
             i {
                 color: $second-color;

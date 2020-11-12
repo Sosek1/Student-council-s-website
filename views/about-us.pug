@@ -11,7 +11,7 @@ html( lang="pl" )
 			include elements/nav.pug
 
 			.row.header.my-5
-				h1 Poznaj nasz samorząd
+				h1 #{title}
 
 			section.about
 				//- Prezydent
@@ -124,7 +124,5 @@ html( lang="pl" )
 						.text
 							include:markdown-it samorzad/opiekun.md
 			include elements/footer.pug
-				.iconbox.mr-2
-					include elements/social-media-links.pug
 
 	include elements/scripts.pug
