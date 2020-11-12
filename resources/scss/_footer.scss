@@ -3,7 +3,7 @@ footer {
     background: $third-color;
     @include center;
     opacity: 0;
-    animation: fade 1s 4s linear forwards;
+	animation: fade 1s 4s linear forwards;
 
     p {
         margin: 0;
