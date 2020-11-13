@@ -20,20 +20,20 @@
     width: 100%;
     min-height: auto;
 
-    .div {
+    .grid-element-wrapper {
+		@extend .mb-2;
         height: 50vh;
-        width: 100%;
-        position: relative;
+        width: calc(100% - 16px);
+		position: relative;
     }
-
-
 }
 
 .yellowbar {
     background: $third-color;
     position: absolute;
     @include center;
-    @include transition-ease;
+	@include transition-ease;
+	margin: 0.25rem;
 
     p {
         font-size: 1.5rem;
@@ -44,53 +44,48 @@
     }
 }
 
-.article {
-    background: url(../img/old-newspaper-350376_640.jpg);
-    background-size: cover;
-    opacity: 0;
-    animation: fade 1s 2s linear forwards;
+.grid-element {
+	height: calc(100% - 0.5rem);
+	width: calc(100% - 0.5rem);
+	background-size: cover;
+	background-position: center;
+	opacity: 0;
 
-}
-
-.feuilleton {
-    background: url(../img/microphone-5594702_640.jpg) center;
-    background-size: cover;
-    opacity: 0;
-    animation: fade 1s 2.5s linear forwards;
-}
-
-.interview {
-
-    background: url(../img/writing-1209121_640.jpg) bottom;
-    background-size: cover;
-    opacity: 0;
-    animation: fade 1s 3s linear forwards;
-}
-
-.review {
-    background: url(../img/breakfast-1869772_640.jpg) center center;
-    background-size: cover;
-    opacity: 0;
-    animation: fade 1s 3.5s linear forwards;
-}
-
-.story {
-    background: url(../img/storytelling-4229843_640.jpg)center;
-    background-size: cover;
-    opacity: 0;
-    animation: fade 1s 4s linear forwards;
-}
-
-.poetryCorner {
-    background: url(../img/pen-4163403_640.jpg);
-    background-size: cover;
-    opacity: 0;
-    animation: fade 1s 4.5s linear forwards;
-}
-
-.reportage {
-    background: url(../img/reporter-852096_640.jpg);
-    background-size: cover;
-    opacity: 0;
-    animation: fade 1s 4.5s linear forwards;
+	&-1 {
+		@extend .grid-element;
+		background-image: url("/img/grid/newspaper.jpg");
+		animation: fade 1s 2s linear forwards;
+	}
+	&-2 {
+		@extend .grid-element;
+		background-image: url("/img/grid/microphone.jpg");
+		background-position: bottom;
+		animation: fade 1s 2.5s linear forwards;
+	}
+	&-3 {
+		@extend .grid-element;
+		background-image: url("/img/grid/writing.jpg");
+		background-position: bottom;
+		animation: fade 1s 3s linear forwards;
+	}
+	&-4 {
+		@extend .grid-element;
+		background-image: url("/img/grid/breakfast.jpg");
+		animation: fade 1s 3.5s linear forwards;
+	}
+	&-5 {
+		@extend .grid-element;
+		background-image: url("/img/grid/typewriter.jpg");
+		animation: fade 1s 4s linear forwards;
+	}
+	&-6 {
+		@extend .grid-element;
+		background-image: url("/img/grid/reporter.jpg");
+		animation: fade 1s 4.5s linear forwards;
+	}
+	&-7 {
+		@extend .grid-element;
+		background-image: url("/img/grid/pen.jpg");
+		animation: fade 1s 5s linear forwards;
+	}
 }

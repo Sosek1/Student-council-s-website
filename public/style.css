@@ -5608,7 +5608,7 @@ button.bg-dark:focus {
 .mx-2 {
   margin-right: 0.5rem !important; }
 
-.mb-2,
+.mb-2, .wrapperMobile .grid-element-wrapper,
 .my-2 {
   margin-bottom: 0.5rem !important; }
 
@@ -7882,9 +7882,9 @@ form {
 .wrapperMobile {
   width: 100%;
   min-height: auto; }
-  .wrapperMobile .div {
+  .wrapperMobile .grid-element-wrapper {
     height: 50vh;
-    width: 100%;
+    width: calc(100% - 16px);
     position: relative; }
 
 .yellowbar {
@@ -7893,7 +7893,8 @@ form {
   align-items: center;
   justify-content: center;
   display: flex;
-  transition: all 0.5s ease-in-out; }
+  transition: all 0.5s ease-in-out;
+  margin: 0.25rem; }
   .yellowbar p {
     font-size: 1.5rem;
     color: #fff;
@@ -7901,60 +7902,49 @@ form {
     transition: all 0.5s ease-in-out;
     font-weight: 300; }
 
-.article {
-  background: url(../img/old-newspaper-350376_640.jpg);
+.grid-element, .grid-element-1, .grid-element-2, .grid-element-3, .grid-element-4, .grid-element-5, .grid-element-6, .grid-element-7 {
+  height: calc(100% - 0.5rem);
+  width: calc(100% - 0.5rem);
   background-size: cover;
-  opacity: 0;
-  animation: fade 1s 2s linear forwards; }
-
-.feuilleton {
-  background: url(../img/microphone-5594702_640.jpg) center;
-  background-size: cover;
-  opacity: 0;
-  animation: fade 1s 2.5s linear forwards; }
-
-.interview {
-  background: url(../img/writing-1209121_640.jpg) bottom;
-  background-size: cover;
-  opacity: 0;
-  animation: fade 1s 3s linear forwards; }
-
-.review {
-  background: url(../img/breakfast-1869772_640.jpg) center center;
-  background-size: cover;
-  opacity: 0;
-  animation: fade 1s 3.5s linear forwards; }
-
-.story {
-  background: url(../img/storytelling-4229843_640.jpg) center;
-  background-size: cover;
-  opacity: 0;
-  animation: fade 1s 4s linear forwards; }
-
-.poetryCorner {
-  background: url(../img/pen-4163403_640.jpg);
-  background-size: cover;
-  opacity: 0;
-  animation: fade 1s 4.5s linear forwards; }
-
-.reportage {
-  background: url(../img/reporter-852096_640.jpg);
-  background-size: cover;
-  opacity: 0;
-  animation: fade 1s 4.5s linear forwards; }
+  background-position: center;
+  opacity: 0; }
+  .grid-element-1 {
+    background-image: url("/img/grid/newspaper.jpg");
+    animation: fade 1s 2s linear forwards; }
+  .grid-element-2 {
+    background-image: url("/img/grid/microphone.jpg");
+    background-position: bottom;
+    animation: fade 1s 2.5s linear forwards; }
+  .grid-element-3 {
+    background-image: url("/img/grid/writing.jpg");
+    background-position: bottom;
+    animation: fade 1s 3s linear forwards; }
+  .grid-element-4 {
+    background-image: url("/img/grid/breakfast.jpg");
+    animation: fade 1s 3.5s linear forwards; }
+  .grid-element-5 {
+    background-image: url("/img/grid/typewriter.jpg");
+    animation: fade 1s 4s linear forwards; }
+  .grid-element-6 {
+    background-image: url("/img/grid/reporter.jpg");
+    animation: fade 1s 4.5s linear forwards; }
+  .grid-element-7 {
+    background-image: url("/img/grid/pen.jpg");
+    animation: fade 1s 5s linear forwards; }
 
 @media screen and (min-width: 280px) {
-  .blogH1 {
-    font-size: 2rem; }
   .wrapperDesktop {
     display: none; }
   .wrapperMobile {
     display: flex; }
+  .blogH1 {
+    font-size: 2rem; }
   .yellowbar {
-    bottom: 0;
-    left: 0;
+    bottom: 0px;
+    left: 0px;
     width: 100%;
-    height: 60px; }
+    height: 60px;
+    margin: 0px; }
   .topBar h1 {
     font-size: .8rem;
     margin: 10px; }
@@ -7969,23 +7959,17 @@ form {
   .articleWrapper .text p {
     font-size: 1rem; } }
 
-@media screen and (min-width: 768px) {
-  .wrapperDesktop {
-    display: none; }
-  .wrapperMobile {
-    display: flex; } }
-
 @media screen and (min-width: 992px) {
   .wrapperDesktop {
-    display: flex; }
-  .wrapperMobile {
     display: none; }
+  .wrapperMobile {
+    display: flex; }
   .yellowbar {
-    bottom: 5px;
-    left: 5px;
-    right: 5px;
-    width: calc(100% - 10px);
-    height: 60px; }
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 60px;
+    margin: 0px; }
   .topBar h1 {
     font-size: 1.5rem; }
   .blogH1 {
@@ -7998,6 +7982,16 @@ form {
     font-size: 1.5rem; }
   .articleWrapper .text p {
     font-size: 1.3rem; } }
+
+@media screen and (min-width: 1200px) {
+  .wrapperDesktop {
+    display: flex; }
+  .wrapperMobile {
+    display: none; }
+  .yellowbar {
+    width: calc(100% - 0.5rem);
+    height: 60px;
+    margin: 0.25rem; } }
 
 body h1::selection {
   background-color: #e49e00; }

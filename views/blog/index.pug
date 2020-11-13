@@ -1,0 +1,112 @@
+- const title = "Blog - Strona Główna";
+
+doctype html
+html( lang="pl" )
+	include ../elements/head.pug
+
+	body
+		include ../elements/menu-drop.pug
+
+		.container-fluid.bg
+			include ../elements/nav.pug
+
+			.row.m-4
+				h1.blogH1 Strona Główna
+
+			.row.no-gutters.wrapperDesktop.m-2( style="height: 105vh;" )
+				.col-xl-7
+					.row.no-gutters( style="height: 60%;" )
+						.col-xl-6
+							a( href="/blog/articles" )
+								.grid-element-1.m-1
+									.yellowbar
+										p Artykuły
+
+						.col-xl-6
+							.row.no-gutters( style="height: 50%;" )
+								.col-xl-12.h-100
+									a( href="/blog/interviews" )
+										.grid-element-2.m-1
+											.yellowbar
+												p Wywiady
+
+								.col-xl-12.h-100
+									a( href="/blog/felietons" )
+										.grid-element-3.m-1
+											.yellowbar
+												p Felietony
+
+					.row.no-gutters( style="height: 40%;" )
+						.col-xl-12
+							a( href="/blog/reviews" )
+								.grid-element-4.m-1
+									.yellowbar
+										p Recenzje
+
+				.col-xl-5
+					.row.no-gutters( style="height: 50%;" )
+						.col-xl-6.h-100
+							a( href="/blog/stories" )
+								.grid-element-5.m-1
+									.yellowbar
+										p Opowiadania
+
+						.col-xl-6.h-100
+							a( href="/blog/reportages" )
+								.grid-element-6.m-1
+									.yellowbar
+										p Reportaże
+
+					.row.no-gutters( style="height: 50%;" )
+						.col-xl-12
+							a( href="/blog/poetry-corner" )
+								.grid-element-7.m-1
+									.yellowbar
+										p Kącik poetycki
+
+			.row.no-gutters.p-0.wrapperMobile
+				.col-12.mx-2.mb-2
+					a( href="/blog/articles" )
+						.grid-element-wrapper.grid-element-1
+							.yellowbar
+								p Artykuły
+
+				.col-12.mx-2.mb-2
+					a( href="/blog/interviews" )
+						.grid-element-wrapper.grid-element-2
+							.yellowbar
+								p Wywiady
+
+				.col-12.mx-2.mb-2
+					a( href="/blog/felietons" )
+						.grid-element-wrapper.grid-element-3
+							.yellowbar
+								p Felietony
+
+				.col-12.mx-2.mb-2
+					a( href="/blog/reviews" )
+						.grid-element-wrapper.grid-element-4
+							.yellowbar
+								p Recenzje
+
+				.col-12.mx-2.mb-2
+					a( href="/blog/stories" )
+						.grid-element-wrapper.grid-element-5
+							.yellowbar
+								p Opowiadania
+
+				.col-12.mx-2.mb-2
+					a( href="/blog/reportages" )
+						.grid-element-wrapper.grid-element-6
+							.yellowbar
+								p Reportaże
+
+				.col-12.mx-2.mb-2
+					a( href="/blog/poetry-corner" )
+						.grid-element-wrapper.grid-element-7
+							.yellowbar
+								p Kącik poetycki
+
+			include ../elements/footer.pug
+
+		include ../elements/scripts.pug
