@@ -1,0 +1,3 @@
+# Przewodniczący sekcji dziennikarskiej
+## Michał Grzesiński
+Michał Grzesiński jest uczniem klasy 2, a w Samorządzie pełni rolę przewodniczącego sekcji dziennikarskiej. Jego największym talentem jest biegłość w “obsłudze” słowa pisanego. Kiedy nie pisze, to zazwyczaj czyta, aby udoskonalić swój warsztat. Bardzo lubi komentować i konsultować prace młodych artystów, czasem i kolegów. Poza tym jest pasjonatem szeroko pojętej kultury (muzyka, kino, teatr). W wolnych chwilach słucha muzyki i gotuje.

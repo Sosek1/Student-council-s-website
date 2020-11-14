@@ -1,3 +1,0 @@
-# Fotograf i grafik
-## Szymon Powroźnik
-Aby nieco urozmaicić wygląd naszej strony potrzebowaliśmy dobrego grafika. Jednocześnie, aby odświeżyć wygląd samorządu w internecie przydatny byłby także dobry fotograf. Na oba stanowiska idealnie nadał się Szymon Powroźnik, którego praca zdecydowanie udoskonaliła stronę samorządu. W wolnym czasie Szymon pasjonuje się fotografią, grafiką, lubi spotkać się z przyjaciółmi a także od czasu do czasu zanurza się w rosyjską muzykę.

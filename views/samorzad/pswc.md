@@ -1,3 +1,0 @@
-# Przewodniczący sekcji wolontaryjno-charytatywnej
-## Emilia Matłok
-Emilia jest przewodniczącą klasy 2B. W wolontariacie bierze udział już od kilku ładnych lat i sprawia jej to wielką radość. Interesuje się architekturą, na która tez zamierza się dostać. Od dwóch lat rysuje a od paru więcej gra na pianinie. Ciekawi ją też psychologia i natura ludzka. Jest otwarta na nowe znajomosci i pomoc innym. Zawsze możecie na nią liczyć. PS. Uwielbia kotki.

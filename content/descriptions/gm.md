@@ -1,0 +1,3 @@
+# Grafik i montażysta
+## Tomek Dziób
+Tomasz Dziób jest już zapewne całkiem znany części naszej szkoły, która interesuje się technikaliami i elektroniką. Jego nieocenione wsparcie podczas ostatniej debaty szkolnej dało nam wszystkim możliwość oglądania jej zdalnie, a także zobaczenia jej ponownie w razie problemów z wyborem kandydata. Niemniej jednak Tomek to nie tylko kamera i zdjęcia, mimo, że i jedno i drugie bardzo lubi. Jest także sportowcem - specjalizuje się w podnoszeniu ciężarów, oraz bardzo lubi biegać. Jest także fanem muzyki rap, wybitnym kompanem na filmie w kinie, uczynnym kolegą i wspaniałym operatorem kamery.

@@ -1,0 +1,50 @@
+.content-list {
+	@extend .row;
+	@extend .mx-lg-5;
+	@extend .mx-3;
+	opacity: 0;
+	animation: fade 1s 2.5s linear forwards;
+
+	.element {
+		@extend .col-xl-4;
+		@extend .col-lg-6;
+		@extend .col-12;
+		@extend .mb-4;
+
+		a {
+			text-decoration: none;
+		}
+
+		.content {
+			@extend .card;
+			@extend .mx-2;
+			@extend .rounded;
+			color: $second-color;
+			background-color: $main-color;
+			transition: background-color 1s;
+
+			.image {
+				background-size: cover;
+				background-position: center;
+				height: 30vh;
+				border-radius: 3px;
+			}
+
+			.card-body {
+				h4 {
+					@extend .card-title;
+				}
+
+				p {
+					@extend .card-text;
+					@extend .mb-1;
+				}
+			}
+
+			&:hover {
+				background-color: lighten($main-color, 5%);
+				transition: background-color 1s;
+			}
+		}
+	}
+}

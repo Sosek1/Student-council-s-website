@@ -1,0 +1,3 @@
+# Sekretarz
+## Agnieszka Szałapak
+Agnieszka Szałapak - uczennica 2 klasy o profilu humanistycznym. Od ponad roku aktywnie rozwija swoje zainteresowania w polityce i samorządności. W przyszłości planuje bowiem tym się zajmować. W kręgu jej zainteresowań pozostaje też muzyka. Często uświetnia swoim śpiewem szkolne akademie. Jest osobą pozytywnie nastawioną do życia i aktywną społecznie. Nigdy nie daje sobie taryfy ulgowej, swoje zadania wykonuje precyzyjnie i zawsze dąży do celu. W ludziach najbardziej ceni sobie konkretność, niezawodność dobrą organizację i emaptię.

@@ -10,119 +10,131 @@ html( lang="pl" )
 		.container-fluid.bg
 			include elements/nav.pug
 
-			.row.header.my-5
-				h1 #{title}
+			.main-min-height
+				.row.header.my-5
+					h1 #{title}
 
-			section.about
-				//- Prezydent
-				.row.m-lg-5.mb-4
-					.col-sm-12.col-xl-6
-						.img.rounded(
-							style="background-image: url(/img/samorzad/prezydent.png); background-position: center;"
-						)
-					.col-sm-12.col-xl-6
-						.text
-							include:markdown-it samorzad/prezydent.md
+				section.about
+					//- Prezydent
+					.row.m-lg-5.mb-4
+						.col-sm-12.col-xl-6
+							.img.rounded(
+								style="background-image: url(/img/descriptions/prezydent.png); background-position: center;"
+							)
+						.col-sm-12.col-xl-6
+							.text
+								include:markdown-it ../content/descriptions/prezydent.md
 
-				//- Wiceprezydent
-				.row.m-lg-5.mb-4
-					.col-sm-12.col-xl-6
-						.img.rounded(
-							style="background-image: url(/img/samorzad/wiceprezydent.png);"
-						)
-					.col-sm-12.col-xl-6
-						.text
-							include:markdown-it samorzad/wiceprezydent.md
+					//- Wiceprezydent
+					.row.m-lg-5.mb-4
+						.col-sm-12.col-xl-6
+							.img.rounded(
+								style="background-image: url(/img/descriptions/wiceprezydent.png);"
+							)
+						.col-sm-12.col-xl-6
+							.text
+								include:markdown-it ../content/descriptions/wiceprezydent.md
 
-				//- Sekretarz
-				.row.m-lg-5.mb-4
-					.col-sm-12.col-xl-6
-						.img.rounded(
-							style="background-image: url(/img/samorzad/sekretarz.png);"
-						)
-					.col-sm-12.col-xl-6
-						.text
-							include:markdown-it samorzad/sekretarz.md
+					//- Sekretarz
+					.row.m-lg-5.mb-4
+						.col-sm-12.col-xl-6
+							.img.rounded(
+								style="background-image: url(/img/descriptions/sekretarz.png);"
+							)
+						.col-sm-12.col-xl-6
+							.text
+								include:markdown-it ../content/descriptions/sekretarz.md
 
-				//- Przewodniczący sekcji organizacyjnej
-				.row.m-lg-5.mb-4
-					.col-sm-12.col-xl-6
-						.img.rounded(
-							style="background-image: url(/img/samorzad/pso.png);"
-						)
-					.col-sm-12.col-xl-6
-						.text
-							include:markdown-it samorzad/pso.md
+					//- Przewodniczący sekcji organizacyjnej
+					.row.m-lg-5.mb-4
+						.col-sm-12.col-xl-6
+							.img.rounded(
+								style="background-image: url(/img/descriptions/pso.png);"
+							)
+						.col-sm-12.col-xl-6
+							.text
+								include:markdown-it ../content/descriptions/pso.md
 
-				//- Przewodniczący sekcji plastyczno-promocyjnej
-				.row.m-lg-5.mb-4
-					.col-sm-12.col-xl-6
-						.img.rounded(
-							style="background-image: url(/img/samorzad/pspp.png);"
-						)
-					.col-sm-12.col-xl-6
-						.text
-							include:markdown-it samorzad/pspp.md
+					//- Przewodniczący sekcji plastyczno-promocyjnej
+					.row.m-lg-5.mb-4
+						.col-sm-12.col-xl-6
+							.img.rounded(
+								style="background-image: url(/img/descriptions/pspp.png);"
+							)
+						.col-sm-12.col-xl-6
+							.text
+								include:markdown-it ../content/descriptions/pspp.md
 
-				//- Przewodniczący sekcji wolontaryjno-charytatywnej
-				.row.m-lg-5.mb-4
-					.col-sm-12.col-xl-6
-						.img.rounded(
-							style="background-image: url(/img/samorzad/pswc.png);"
-						)
-					.col-sm-12.col-xl-6
-						.text
-							include:markdown-it samorzad/pswc.md
+					//- Przewodniczący sekcji wolontaryjno-charytatywnej
+					.row.m-lg-5.mb-4
+						.col-sm-12.col-xl-6
+							.img.rounded(
+								style="background-image: url(/img/descriptions/pswc.png);"
+							)
+						.col-sm-12.col-xl-6
+							.text
+								include:markdown-it ../content/descriptions/pswc.md
 
-				//- Przewodniczący sekcji dziennikarskiej
-				.row.m-lg-5.mb-4
-					.col-sm-12.col-xl-6
-						.img.rounded(
-							style="background-image: url(/img/samorzad/psd.png);"
-						)
-					.col-sm-12.col-xl-6
-						.text
-							include:markdown-it samorzad/psd.md
+					//- Przewodniczący sekcji dziennikarskiej
+					.row.m-lg-5.mb-4
+						.col-sm-12.col-xl-6
+							.img.rounded(
+								style="background-image: url(/img/descriptions/psd.png);"
+							)
+						.col-sm-12.col-xl-6
+							.text
+								include:markdown-it ../content/descriptions/psd.md
 
-				//- Twórca strony
-				.row.m-lg-5.mb-4
-					.col-sm-12.col-xl-6
-						.img.rounded(
-							style="background-image: url(/img/samorzad/tworca.png);"
-						)
-					.col-sm-12.col-xl-6
-						.text
-							include:markdown-it samorzad/tworca.md
+					//- Twórca strony
+					.row.m-lg-5.mb-4
+						.col-sm-12.col-xl-6
+							.img.rounded(
+								style="background-image: url(/img/descriptions/tworca.png);"
+							)
+						.col-sm-12.col-xl-6
+							.text
+								include:markdown-it ../content/descriptions/tworca.md
 
-				//- Fotograf i grafik
-				.row.m-lg-5.mb-4
-					.col-sm-12.col-xl-6
-						.img.rounded(
-							style="background-image: url(/img/samorzad/fg.png); background-size: 50%;"
-						)
-					.col-sm-12.col-xl-6
-						.text
-							include:markdown-it samorzad/fg.md
+					//- Fotograf i grafik
+					.row.m-lg-5.mb-4
+						.col-sm-12.col-xl-6
+							.img.rounded(
+								style="background-image: url(/img/descriptions/fg.png); background-size: 50%;"
+							)
+						.col-sm-12.col-xl-6
+							.text
+								include:markdown-it ../content/descriptions/fg.md
 
-				//- Grafik i montarzysta
-				.row.m-lg-5.mb-4
-					.col-sm-12.col-xl-6
-						.img.rounded(
-							style="background-image: url(/img/samorzad/gm.png);"
-						)
-					.col-sm-12.col-xl-6
-						.text
-							include:markdown-it samorzad/gm.md
+					//- Grafik i montażysta
+					.row.m-lg-5.mb-4
+						.col-sm-12.col-xl-6
+							.img.rounded(
+								style="background-image: url(/img/descriptions/gm.png);"
+							)
+						.col-sm-12.col-xl-6
+							.text
+								include:markdown-it ../content/descriptions/gm.md
 
-				//- Opiekun samorządu
-				.row.m-lg-5.mb-4
-					.col-sm-12.col-xl-6
-						.img.rounded(
-							style="background-image: url(/img/samorzad/opiekun.png);"
-						)
-					.col-sm-12.col-xl-6
-						.text
-							include:markdown-it samorzad/opiekun.md
+					//- Opiekun samorządu
+					.row.m-lg-5.mb-4
+						.col-sm-12.col-xl-6
+							.img.rounded(
+								style="background-image: url(/img/descriptions/opiekun1.png);"
+							)
+						.col-sm-12.col-xl-6
+							.text
+								include:markdown-it ../content/descriptions/opiekun1.md
+
+					//- Opiekun samorządu
+					.row.m-lg-5.mb-4
+						.col-sm-12.col-xl-6
+							.img.rounded(
+								style="background-image: url(/img/descriptions/opiekun2.png);"
+							)
+						.col-sm-12.col-xl-6
+							.text
+								include:markdown-it ../content/descriptions/opiekun2.md
+
 			include elements/footer.pug
 
 	include elements/scripts.pug

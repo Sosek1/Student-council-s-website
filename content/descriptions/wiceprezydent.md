@@ -1,0 +1,3 @@
+# Wiceprezydent
+## Ania Jamróz
+Część z Was na pewno zna już Anię. Ania jest uczennicą klasy drugiej. Posiada niesamowite zdolności aktorskie. Jej talent, mieliśmy już okazję podziwiać podczas kilku przedstawień szkolnych. Poza teatrem uwielbia sport, czym zaraził ją tata. Przez 5 lat trenowała siatkówkę, co wyrobiło w niej umiejętność pracy zespołowej i konsekwencję w dążeniu do wyznaczonych celów. Kocha także literaturę oraz muzykę, a jej ulubionym zespołem jest Quen. Z radością podejmuje samorządowe inicjatywy, bo pozwalają jej na pracę z ludźmi i samorealizację.

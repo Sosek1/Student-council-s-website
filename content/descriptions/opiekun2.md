@@ -1,0 +1,3 @@
+# Opiekun Samorządu
+## Mgr inż. Mateusz Gałązka
+Mgr inż. Mateusz Gałązka, nauczyciel informatyki, administrator szkolnego Facebooka i Instagrama, fotograf na uroczystościach szkolnych. Prowadzi szkolne kółko programistyczne. Prywatnie pasjonat biegania, miłośnik kawy oraz dobrej książki. Aktywnie działa na rzecz upowszechniania kultury fizycznej i sportu w Stowarzyszeniu „*I Ty Możesz Być Wielki*”.

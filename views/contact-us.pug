@@ -10,92 +10,94 @@ html( lang="pl" )
 		.container-fluid.bg
 			include elements/nav.pug
 
-			section.contact
-				form(
-					method="POST"
-					action="/contact-us"
-				)
-					h1.text-center Napisz do nas!
-
-					input#name(
-						type="text"
-						placeholder="Imię i nazwisko"
+			.main-min-height
+				section.contact
+					form(
+						method="POST"
+						action="/contact-us"
 					)
+						h1.text-center Napisz do nas!
 
-					input#email(
-						type="email"
-						placeholder="E-mail"
-					)
+						input#name(
+							type="text"
+							placeholder="Imię i nazwisko"
+						)
 
-					input#subject(
-						type="text"
-						placeholder="Temat"
-					)
+						input#email(
+							type="email"
+							placeholder="E-mail"
+						)
 
-					textarea#body.rounded(
-						rows="5"
-						placeholder="Napisz wiadomość..."
-					)
+						input#subject(
+							type="text"
+							placeholder="Temat"
+						)
 
-					.buttonNote
-						button.rounded(
-							type="submit"
-						) Wyślij
-						i#note.fas.fa-music
+						textarea#body.rounded(
+							rows="5"
+							placeholder="Napisz wiadomość..."
+						)
 
-			section.row.no-gutters.icons
-				.row.no-gutters.d-flex
-					.col.icon1.p-0
-						a( href="https://www.facebook.com/lo42krakow/" )
-							.iconBox2
-								i.fab.fa-facebook-f.m-5
+						.buttonNote
+							button.rounded(
+								type="submit"
+							) Wyślij
+							i#note.fas.fa-music
 
-							h1 XLII Liceum Ogólnokształcące w Krakowie
+				section.row.no-gutters.icons
+					.row.no-gutters.d-flex
+						.col.icon1.p-0
+							a( href="https://www.facebook.com/lo42krakow/" )
+								.iconBox2
+									i.fab.fa-facebook-f.m-5
 
-					.col.icon1.p-0
-						a( href="https://www.facebook.com/groups/499859403913734" )
-							.iconBox2
-								i.fab.fa-facebook-f.m-5
+								h1 XLII Liceum Ogólnokształcące w Krakowie
 
-							h1 Spotted XLII LO
+						.col.icon1.p-0
+							a( href="https://www.facebook.com/groups/499859403913734" )
+								.iconBox2
+									i.fab.fa-facebook-f.m-5
 
-					.col.icon1.p-0
-						a( href="http://lo42krakow.pl/" )
-							.iconBox2
-								i.fas.fa-file-code.m-5
+								h1 Spotted XLII LO
 
-							h1 XLII Liceum Ogólnokształcące w Krakowie
+						.col.icon1.p-0
+							a( href="http://lo42krakow.pl/" )
+								.iconBox2
+									i.fas.fa-file-code.m-5
 
-				.row.no-gutters.d-flex
-					.col.icon1.p-0
-						a( href="https://www.instagram.com/liceum42/" )
-							.iconBox2
-								i.fab.fa-instagram.m-5
+								h1 XLII Liceum Ogólnokształcące w Krakowie
 
-							h1 liceum42
+					.row.no-gutters.d-flex
+						.col.icon1.p-0
+							a( href="https://www.instagram.com/liceum42/" )
+								.iconBox2
+									i.fab.fa-instagram.m-5
 
-					.col.icon1.p-0
-						a( href="https://www.instagram.com/su_42lo/" )
-							.iconBox2
-								i.fab.fa-instagram.m-5
+								h1 liceum42
 
-							h1 su_42lo
+						.col.icon1.p-0
+							a( href="https://www.instagram.com/su_42lo/" )
+								.iconBox2
+									i.fab.fa-instagram.m-5
 
-					.col.icon1.p-0
-						a( href="https://www.instagram.com/42lo_tellonym/" )
-							.iconBox2
-								i.fab.fa-instagram.m-5
+								h1 su_42lo
 
-							h1 42lo_tellonym
+						.col.icon1.p-0
+							a( href="https://www.instagram.com/42lo_tellonym/" )
+								.iconBox2
+									i.fab.fa-instagram.m-5
 
-			#noteModal.modal
-				.modal-content
-					span#closeModal.close &times;
-					p Tego formularza możesz użyć do przesłania nam tytułu utworu, który chcesz posłuchać. Możesz również napisać dedykację, która zostanie odczytana.
+								h1 42lo_tellonym
+
+				#noteModal.modal
+					.modal-content
+						span#closeModal.close &times;
+						p Tego formularza możesz użyć do przesłania nam tytułu utworu, który chcesz posłuchać. Możesz również napisać dedykację, która zostanie odczytana.
 
 			include elements/footer.pug
 
 	include elements/scripts.pug
+
 	script(
 		src="modal.js"
 	)

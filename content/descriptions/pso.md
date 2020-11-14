@@ -1,0 +1,3 @@
+# Przewodniczący sekcji organizacyjnej
+## Krzysztof Mazurkiewicz
+Krzysiek Mazurkiewicz, uczeń klasy 2b1 jest przewodniczącym sekcji organizacyjnej. Ma wiele zainteresowań, a jednym z nich jest lotnictwo. Ta pasja przerodziła się w plany na przyszłość. Teraz mamy w szkole przyszłego pilota! Ponadto interesuje się też wojskiem. W kręgu jego zainteresowań pozostaje armia amerykańska, jej wyposażenie, możliwości, a  przede wszystkim rozwój. Nie wyklucza w przyszłości zawodowej połączenia tych dwóch pasji. Krzysiek jest świetnie zorganizowany, jest też komunikatywny, pracowity i otwarty na innowacyjne rozwiązania. Chętnie podejmuje inicjatywy charytatywne i społeczne, realizując swoje zdolności w zakresie planowania.

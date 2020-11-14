@@ -1,0 +1,3 @@
+# Fotograf i grafik
+## Szymon Powroźnik
+Szymon Powroźnik to przyszły grafik. Aktualnie dopracowuje i uatrakcyjnia wygląd naszej strony internetowej. Nowoczesne rozwiązania, niespotykane elementy graficzne to pestka dla naszego speca. Poza tym interesuje się także fotografią. Ma już na swoim koncie ciekawe sesje w plenerze. W wolnym czasie Szymon lubi spotkać się z przyjaciółmi, a także zasłuchiwać się w rosyjskiej muzyce.

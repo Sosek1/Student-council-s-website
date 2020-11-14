@@ -1,0 +1,3 @@
+# Przewodniczący sekcji plastyczno-promocyjnej
+## Alicja Mazurkiewicz
+Ala Mazurkiewicz, uczennica klasy 2e1, w naszym Samorządzie jest przewodniczącą sekcji polastyczno - promocyjnej. Jej największą pasją jest taniec, a konkretniej taniec jazzowy. W ten sposób się relaksuje i pozbywa złych emocji. Drugą pasją Ali jest nauka, ale bynajmniej nie wszytskiego. Uwielbia uczyć się historii i zgłębiać wiedzę z zakresu Starożytności i wczesnego Średniowiecza. Ma nadzieję, że w przyszłości pomoże jej to dostać na prawo i zostać prawnikiem. Ala jest typem społecznika, z chęcią podejmuje różne inicjatywy i poznaje nowych ludzi.
