@@ -38,7 +38,7 @@ module.exports = (app) => {
 				from: req.body.email,
 				to: process.env.CONTACT_MAIL,
 				subject: "Contact: " + req.body.topic,
-				text: req.body.text
+				text: `${req.body.name}\n\n${req.body.text}`
 			}
 			sendMail(message);
 			res.redirect("/")
