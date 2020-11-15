@@ -111,7 +111,7 @@ Aby dodać nowy post, należy wykonać poniższe czynności:
 				"tags": []
 			}
 		],
-		//-Tutaj-brakuje-wartości-dla-"felietons"
+		//-Tutaj-brakuje-wartości-dla-felietons
 		"reviews": [
 			{
 				"title": "Tytuł recenzji",
