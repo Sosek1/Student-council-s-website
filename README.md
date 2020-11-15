@@ -129,7 +129,7 @@ Aby dodać nowy post, należy wykonać poniższe czynności:
 
 		],
 		"poetry": [
-			{ //-Niewypełnione pola
+			{ //-Niewypełnione-pola
 				"title": "",
 				"author": "",
 				"authorAvatar": "",
