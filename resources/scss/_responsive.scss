@@ -336,11 +336,11 @@
     }
 
     nav {
-        height: 12.5vh;
+		height: 15vh;
         display: flex;
 
         img {
-            height: 90px;
+            height: 12.5vh;
         }
     }
 
@@ -427,9 +427,6 @@
 }
 
 @include media-sm-landscape {
-
-
-
     .bar {
         height: 15vh;
     }

@@ -1,4 +1,5 @@
-- const title = `Blog - ${contentType}`;
+- const title = content.title
+- const tags = content.tags.map(tag => "#" + tag.replace(/\s/g, "-")).join(" ");
 
 doctype html
 html( lang="pl" )
@@ -7,34 +8,21 @@ html( lang="pl" )
 	body
 		include ../elements/menu-drop.pug
 
-		.container-fluid.bg
+		.container-fluid
 			include ../elements/nav.pug
 
-			.main-min-height
-				.m-4
-					h1.blogH1 #{contentType}
+			.main-min-height.blog-content-wrapper
+				.title #{content.title}
 
-				.content-list
-					each item, index in content
-						.element
-							a( href=`/blog/${type}/${content.length - index}` )
-								.content
-									.image(
-										style=`background-image: url(/img/blog/thumbnails/${item.thumbnail});`
-									)
+				.authorWrapper
+					img( src=`/img/blog/authors/${content.authorAvatar}` )
+					p #{content.author}
 
-									.card-body
-										h4= item.title
+				.tags
+					p #{tags}
 
-										p Autor: #{item.author}
-
-										- const itemTags = item.tags.map(tag => "#" + tag.replace(/\s/g, "-")).join(" ");
-										p #{itemTags}
-
-					else
-						.col-12.font-weight-bold.text-center
-							.display-1 Coś tu pusto...
+				.content-wrapper !{body}
 
 			include ../elements/footer.pug
 
-		include ../elements/scripts.pug
+	include ../elements/scripts.pug

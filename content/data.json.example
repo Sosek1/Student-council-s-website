@@ -1,0 +1,72 @@
+{
+	"articles": [
+		{
+			"title": "",
+			"author": "",
+			"authorAvatar": "",
+			"thumbnail": "",
+			"filename": "",
+			"tags": []
+		}
+	],
+	"interviews": [
+		{
+			"title": "",
+			"author": "",
+			"authorAvatar": "",
+			"thumbnail": "",
+			"filename": "",
+			"tags": []
+		}
+	],
+	"felietons": [
+		{
+			"title": "",
+			"author": "",
+			"authorAvatar": "",
+			"thumbnail": "",
+			"filename": "",
+			"tags": []
+		}
+	],
+	"reviews": [
+		{
+			"title": "",
+			"author": "",
+			"authorAvatar": "",
+			"thumbnail": "",
+			"filename": "",
+			"tags": []
+		}
+	],
+	"stories": [
+		{
+			"title": "",
+			"author": "",
+			"authorAvatar": "",
+			"thumbnail": "",
+			"filename": "",
+			"tags": []
+		}
+	],
+	"reportages": [
+		{
+			"title": "",
+			"author": "",
+			"authorAvatar": "",
+			"thumbnail": "",
+			"filename": "",
+			"tags": []
+		}
+	],
+	"poetry": [
+		{
+			"title": "",
+			"author": "",
+			"authorAvatar": "",
+			"thumbnail": "",
+			"filename": "",
+			"tags": []
+		}
+	]
+}

@@ -1,9 +1,10 @@
 footer {
-    height: 5vh;
+    height: calc(6vh - 10px);
     background: $third-color;
     @include center;
     opacity: 0;
 	animation: fade 1s 4s linear forwards;
+	margin-top: 10px;
 
     p {
         margin: 0;
@@ -38,7 +39,8 @@ footer {
 .footerHomepage {
     height: 5vh;
     background: $third-color;
-    @include center;
+	@include center;
+	margin-top: 0px;
 
     p {
         margin: 0;
@@ -46,9 +48,4 @@ footer {
         font-family: $font-style;
         @include center;
     }
-}
-
-.footerArticle {
-    height: 80px;
-
 }
