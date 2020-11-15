@@ -104,14 +104,14 @@ Aby dodać nowy post, należy wykonać poniższe czynności:
 			}
 		],
 		"interviews": [
-			{ // Tutaj brakuje pewnych pól
+			{ //-Tutaj-brakuje-pewnych-pól
 				"title": "",
 				"author": "",
 				"authorAvatar": "",
 				"tags": []
 			}
 		],
-		// Tutaj brakuje wartości dla "felietons"
+		//-Tutaj-brakuje-wartości-dla-"felietons"
 		"reviews": [
 			{
 				"title": "Tytuł recenzji",
@@ -129,7 +129,7 @@ Aby dodać nowy post, należy wykonać poniższe czynności:
 
 		],
 		"poetry": [
-			{ // Niewypełnione pola
+			{ //-Niewypełnione pola
 				"title": "",
 				"author": "",
 				"authorAvatar": "",
