@@ -1,6 +1,6 @@
 const markdownIt = require("markdown-it")({
 	html: true,
-	linkify: true,
+	linkify: false,
 	typographer: true
 });
 const requireText = require("require-text");
