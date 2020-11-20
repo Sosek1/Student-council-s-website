@@ -1,0 +1,62 @@
+[
+	{
+		"role": "Prezydent",
+		"image": "prezydent.jpg",
+		"file": "prezydent"
+	},
+	{
+		"role": "Wiceprezydent",
+		"image": "wiceprezydent.jpg",
+		"file": "wiceprezydent"
+	},
+	{
+		"role": "Sekretarz",
+		"image": "sekretarz.jpg",
+		"file": "sekretarz"
+	},
+	{
+		"role": "Przewodniczący sekcji organizacyjnej",
+		"image": "pso.jpg",
+		"file": "pso"
+	},
+	{
+		"role": "Przewodniczący sekcji plastyczno-promocyjnej",
+		"image": "pspp.jpg",
+		"file": "pspp"
+	},
+	{
+		"role": "Przewodniczący sekcji wolontaryjno-charytatywnej",
+		"image": "pswc.jpg",
+		"file": "pswc"
+	},
+	{
+		"role": "Przewodniczący sekcji dziennikarskiej",
+		"image": "psd.jpg",
+		"file": "psd"
+	},
+	{
+		"role": "Twórca strony",
+		"image": "tworca.jpg",
+		"file": "tworca"
+	},
+	{
+		"role": "Fotograf i grafik",
+		"image": "fg.jpg",
+		"file": "fg"
+	},
+	{
+		"role": "Grafik i montażysta",
+		"image": "gm.jpg",
+		"file": "gm"
+	},
+	{
+		"role": "Opiekun samorządu",
+		"image": "opiekun1.jpg",
+		"file": "opiekun1"
+	},
+	{
+		"role": "Opiekun samorządu",
+		"image": "opiekun2.jpg",
+		"file": "opiekun2"
+	}
+]

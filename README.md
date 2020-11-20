@@ -10,7 +10,7 @@ Aby dodać nowy post, należy wykonać poniższe czynności:
 
 1. Zamieść miniaturę artykułu w folderze `./public/img/blog/thumbnails`.
 
-1. Znaleźć plik `data.json`, znajduje się on w folderze: `./content`. Jeśli plik nie istnieje, należy skopiować plik `data.json.example` i zmienić jego nazwę na `data.json`. **Nie ma potrzeby usuwać pliku `data.json.example`.** W pliku `data.json` należy wypełnić danymi odpowiednie pola:
+1. Znaleźć plik `blog.json`, znajduje się on w folderze: `./content`. Jeśli plik nie istnieje, należy skopiować plik `blog.json.example` i zmienić jego nazwę na `blog.json`. **Nie ma potrzeby usuwać pliku `blog.json.example`.** W pliku `blog.json` należy wypełnić danymi odpowiednie pola:
 	```json
 	{
 		"title": "",

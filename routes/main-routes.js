@@ -1,23 +1,17 @@
+const markdownIt = require("markdown-it")({
+	html: true,
+	linkify: true,
+	typographer: true
+});
+const requireText = require("require-text");
 const nodemailer = require("nodemailer");
 
 module.exports = (app) => {
-	app.get("/", (req, res) => {
-		res.render("index");
-	});
-
-	app.get("/about-us", (req, res) => {
-		res.render("about-us")
-	});
-
-	app.get("/discounts", (req, res) => {
-		res.render("discounts")
-	});
-
 	async function sendMail(message) {
 		const transporter = nodemailer.createTransport({
 			host: process.env.SMTP_HOST,
-			port: parseInt(process.env.SMTP_PORT),
-			secure: process.env.SMTP_SECURE == "true", // true for port 465
+			port: Number(process.env.SMTP_PORT),
+			secure: Number(process.env.SMTP_PORT) == 465,
 			auth: {
 				user: process.env.SMTP_USER,
 				pass: process.env.SMTP_PASSWORD
@@ -25,8 +19,29 @@ module.exports = (app) => {
 		})
 
 		const info = await transporter.sendMail(message);
-		console.log("Message sent: " + nodemailer.getTestMessageUrl(info));
+		//console.log("Message sent: " + nodemailer.getTestMessageUrl(info));
 	}
+
+	app.get("/", (req, res) => {
+		res.render("index");
+	});
+
+	app.get("/about-us", (req, res) => {
+		const descriptions = require("../content/descriptions.json");
+		let texts = [];
+		descriptions.forEach(item => {
+			texts.push(markdownIt.render(requireText(`../content/descriptions/${item.file}.md`, require)))
+		});
+
+		res.render("about-us", {
+			data: descriptions,
+			texts: texts
+		});
+	});
+
+	app.get("/discounts", (req, res) => {
+		res.render("discounts");
+	});
 
 	app.route("/contact-us")
 		.get((req, res) => {

@@ -15,125 +15,21 @@ html( lang="pl" )
 					h1 #{title}
 
 				section.about
-					//- Prezydent
-					.row.m-lg-5.mb-4
-						.col-sm-12.col-xl-6
-							.img.rounded(
-								style="background-image: url(/img/descriptions/prezydent.png); background-position: center;"
-							)
-						.col-sm-12.col-xl-6
-							.text
-								include:markdown-it ../content/descriptions/prezydent.md
-
-					//- Wiceprezydent
-					.row.m-lg-5.mb-4
-						.col-sm-12.col-xl-6
-							.img.rounded(
-								style="background-image: url(/img/descriptions/wiceprezydent.png);"
-							)
-						.col-sm-12.col-xl-6
-							.text
-								include:markdown-it ../content/descriptions/wiceprezydent.md
-
-					//- Sekretarz
-					.row.m-lg-5.mb-4
-						.col-sm-12.col-xl-6
-							.img.rounded(
-								style="background-image: url(/img/descriptions/sekretarz.png);"
-							)
-						.col-sm-12.col-xl-6
-							.text
-								include:markdown-it ../content/descriptions/sekretarz.md
-
-					//- Przewodniczący sekcji organizacyjnej
-					.row.m-lg-5.mb-4
-						.col-sm-12.col-xl-6
-							.img.rounded(
-								style="background-image: url(/img/descriptions/pso.png);"
-							)
-						.col-sm-12.col-xl-6
-							.text
-								include:markdown-it ../content/descriptions/pso.md
-
-					//- Przewodniczący sekcji plastyczno-promocyjnej
-					.row.m-lg-5.mb-4
-						.col-sm-12.col-xl-6
-							.img.rounded(
-								style="background-image: url(/img/descriptions/pspp.png);"
-							)
-						.col-sm-12.col-xl-6
-							.text
-								include:markdown-it ../content/descriptions/pspp.md
-
-					//- Przewodniczący sekcji wolontaryjno-charytatywnej
-					.row.m-lg-5.mb-4
-						.col-sm-12.col-xl-6
-							.img.rounded(
-								style="background-image: url(/img/descriptions/pswc.png);"
-							)
-						.col-sm-12.col-xl-6
-							.text
-								include:markdown-it ../content/descriptions/pswc.md
-
-					//- Przewodniczący sekcji dziennikarskiej
-					.row.m-lg-5.mb-4
-						.col-sm-12.col-xl-6
-							.img.rounded(
-								style="background-image: url(/img/descriptions/psd.png);"
-							)
-						.col-sm-12.col-xl-6
-							.text
-								include:markdown-it ../content/descriptions/psd.md
-
-					//- Twórca strony
-					.row.m-lg-5.mb-4
-						.col-sm-12.col-xl-6
-							.img.rounded(
-								style="background-image: url(/img/descriptions/tworca.png);"
-							)
-						.col-sm-12.col-xl-6
-							.text
-								include:markdown-it ../content/descriptions/tworca.md
-
-					//- Fotograf i grafik
-					.row.m-lg-5.mb-4
-						.col-sm-12.col-xl-6
-							.img.rounded(
-								style="background-image: url(/img/descriptions/fg.png); background-size: 50%;"
-							)
-						.col-sm-12.col-xl-6
-							.text
-								include:markdown-it ../content/descriptions/fg.md
-
-					//- Grafik i montażysta
-					.row.m-lg-5.mb-4
-						.col-sm-12.col-xl-6
-							.img.rounded(
-								style="background-image: url(/img/descriptions/gm.png);"
-							)
-						.col-sm-12.col-xl-6
-							.text
-								include:markdown-it ../content/descriptions/gm.md
-
-					//- Opiekun samorządu
-					.row.m-lg-5.mb-4
-						.col-sm-12.col-xl-6
-							.img.rounded(
-								style="background-image: url(/img/descriptions/opiekun1.png);"
-							)
-						.col-sm-12.col-xl-6
-							.text
-								include:markdown-it ../content/descriptions/opiekun1.md
-
-					//- Opiekun samorządu
-					.row.m-lg-5.mb-4
-						.col-sm-12.col-xl-6
-							.img.rounded(
-								style="background-image: url(/img/descriptions/opiekun2.png);"
-							)
-						.col-sm-12.col-xl-6
-							.text
-								include:markdown-it ../content/descriptions/opiekun2.md
+					each item, index in data
+						.row.m-lg-5.mb-4
+							.col-xl-6.col-sm-12
+								.img.rounded(
+									style=`background-image: url(/img/descriptions/${item.image});
+										${index == 0 ?
+											"background-position: center;" :
+											(index == 1 ?
+											"background-position: center; background-size: 75%;" :
+											(index == 8 ?
+											"background-size: 50%;" : "" ))}`
+								)
+								//- Remove the if statements when photos don't need one-by-one adjusting
+							.col-xl-6.col-sm-12
+								.text !{texts[index]}
 
 			include elements/footer.pug
 
