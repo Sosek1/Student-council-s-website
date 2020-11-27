@@ -26,7 +26,7 @@ module.exports = (app) => {
 			return;
 		}
 
-		const contentData = require("../content/data.json")[content];
+		const contentData = require("../content/blog.json")[content];
 		res.render("blog/blog-content-list", {
 			contentType: contentTypes[content],
 			content: contentData.slice().reverse(),
@@ -46,7 +46,7 @@ module.exports = (app) => {
 				poetry: "Kącik poetycki"
 			};
 
-		const contentData = require("../content/data.json");
+		const contentData = require("../content/blog.json");
 		if (contentTypes[content] == undefined || id == 0 || contentData[content].length < id) {
 			res.status(404).send("ERR 404 - Stop! You violated the law. Pay the court a fine or serve your sentence. Your stolen goods are now forfeit.");
 			return;

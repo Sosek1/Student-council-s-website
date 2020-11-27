@@ -4,24 +4,9 @@ const markdownIt = require("markdown-it")({
 	typographer: true
 });
 const requireText = require("require-text");
-const nodemailer = require("nodemailer");
+const sendmail = require("sendmail")();
 
 module.exports = (app) => {
-	async function sendMail(message) {
-		const transporter = nodemailer.createTransport({
-			host: process.env.SMTP_HOST,
-			port: Number(process.env.SMTP_PORT),
-			secure: Number(process.env.SMTP_PORT) == 465,
-			auth: {
-				user: process.env.SMTP_USER,
-				pass: process.env.SMTP_PASSWORD
-			}
-		})
-
-		const info = await transporter.sendMail(message);
-		//console.log("Message sent: " + nodemailer.getTestMessageUrl(info));
-	}
-
 	app.get("/", (req, res) => {
 		res.render("index");
 	});
@@ -53,9 +38,10 @@ module.exports = (app) => {
 				from: req.body.email,
 				to: process.env.CONTACT_MAIL,
 				subject: "Contact: " + req.body.topic,
-				text: `${req.body.name}\n\n${req.body.text}`
+				html: `${req.body.name}\n\n${req.body.text}`
 			}
-			sendMail(message);
+			sendmail(message);
+
 			res.redirect("/")
 		});
 }
