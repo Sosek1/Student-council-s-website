@@ -4,9 +4,21 @@ const markdownIt = require("markdown-it")({
 	typographer: true
 });
 const requireText = require("require-text");
-const sendmail = require("sendmail")();
+const nodemailer = require("nodemailer");
 
 module.exports = (app) => {
+	async function sendMail(message) {
+		const transporter = nodemailer.createTransport({
+			service: "gmail",
+			auth: {
+				user: process.env.GMAIL_USER,
+				pass: process.env.GMAIL_PASSWORD
+			}
+		})
+
+		await transporter.sendMail(message, err => console.log(err));
+	}
+
 	app.get("/", (req, res) => {
 		res.render("index");
 	});
@@ -38,10 +50,9 @@ module.exports = (app) => {
 				from: req.body.email,
 				to: process.env.CONTACT_MAIL,
 				subject: "Contact: " + req.body.topic,
-				html: `${req.body.name}\n\n${req.body.text}`
+				text: `${req.body.name}\n\n${req.body.text}`
 			}
-			sendmail(message);
-
+			sendMail(message);
 			res.redirect("/")
 		});
 }
