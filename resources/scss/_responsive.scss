@@ -1,6 +1,4 @@
 @include media-sm {
-
-
     .container-fluid {
         overflow-x: hidden;
     }
@@ -19,11 +17,6 @@
             font-size: 1rem;
         }
     }
-
-
-    // .menuBar {
-    //     min-height: 15vh;
-    // }
 
     nav {
         display: none;
@@ -61,7 +54,6 @@
     }
 
     //aboutus
-
     .header {
         h1 {
             font-size: 2rem;
@@ -91,8 +83,6 @@
     }
 
     //discounts
-
-
     .discounts {
         .image {
             height: 60vh;
@@ -179,9 +169,7 @@
 }
 
 @include media-md {
-
     //homepage
-
     .headings {
         h1 {
             font-size: 3rem;
@@ -195,10 +183,6 @@
             font-size: 2rem;
         }
     }
-
-    // .menuBar {
-    //     min-height: 12.5vh;
-    // }
 
     .bar {
         height: 12.5vh;
@@ -230,7 +214,12 @@
     }
 
     .about {
-        .text {
+		.img {
+			height: 80vh;
+		}
+		.text {
+			height: 80vh;
+
             h1 {
                 font-size: 3rem;
             }
@@ -247,7 +236,6 @@
     }
 
     //discounts
-
     .discounts {
         .image {
             height: 80vh;
@@ -261,7 +249,6 @@
     }
 
     form {
-
         margin: 2rem;
         padding: 2rem;
         width: 60vh;
@@ -291,15 +278,10 @@
             padding: .5rem;
         }
     }
-
-
-
 }
 
 @include media-lg {
-
     //homepage
-
     .headings {
         h1 {
             font-size: 5rem;
@@ -314,8 +296,6 @@
         }
     }
 
-
-
     footer {
         p {
             font-size: 1rem;
@@ -326,9 +306,7 @@
         }
     }
 
-
     //discounts
-
     .discounts {
         .image {
             height: 40vh;
@@ -391,9 +369,7 @@
 }
 
 @include media-xl {
-
     //about
-
     .header {
         h1 {
             font-size: 4rem;
@@ -401,8 +377,13 @@
     }
 
     .about {
+		.img {
+            height: 85vh;
+        }
 
         .text {
+			height: 85vh;
+
             h1 {
                 font-size: 3rem;
             }
@@ -413,7 +394,7 @@
 
             p {
                 font-size: 1.3rem;
-                padding: 5rem;
+                padding: 3rem;
             }
         }
     }
@@ -432,7 +413,6 @@
     }
 
     //about
-
     .about {
         .img {
             height: 150vh;
@@ -456,7 +436,6 @@
     }
 
     //discounts
-
     .discounts {
         .image {
             height: 200vh;

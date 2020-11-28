@@ -7463,13 +7463,17 @@ footer {
     font-size: 1rem; }
   .header h1 {
     font-size: 3rem; }
-  .about .text h1 {
-    font-size: 3rem; }
-  .about .text h2 {
-    font-size: 2.5rem; }
-  .about .text p {
-    font-size: 1.5rem;
-    padding: 5rem; }
+  .about .img {
+    height: 80vh; }
+  .about .text {
+    height: 80vh; }
+    .about .text h1 {
+      font-size: 3rem; }
+    .about .text h2 {
+      font-size: 2.5rem; }
+    .about .text p {
+      font-size: 1.5rem;
+      padding: 5rem; }
   .discounts .image {
     height: 80vh; }
   .contact {
@@ -7549,13 +7553,17 @@ footer {
 @media screen and (min-width: 1200px) {
   .header h1 {
     font-size: 4rem; }
-  .about .text h1 {
-    font-size: 3rem; }
-  .about .text h2 {
-    font-size: 2.5rem; }
-  .about .text p {
-    font-size: 1.3rem;
-    padding: 5rem; }
+  .about .img {
+    height: 85vh; }
+  .about .text {
+    height: 85vh; }
+    .about .text h1 {
+      font-size: 3rem; }
+    .about .text h2 {
+      font-size: 2.5rem; }
+    .about .text p {
+      font-size: 1.3rem;
+      padding: 3rem; }
   .discounts .image {
     height: 62.5vh; } }
 
