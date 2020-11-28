@@ -7306,7 +7306,6 @@ nav {
   transform: translateY(0); }
 
 footer {
-  height: calc(6vh - 10px);
   background: #e49e00;
   align-items: center;
   justify-content: center;
@@ -7371,11 +7370,13 @@ footer {
     display: flex; }
   .bar {
     height: 15vh; }
-  footer .iconbox {
-    width: 10%; }
-  footer p {
-    font-size: .9rem;
-    width: 90%; }
+  footer {
+    height: calc(10vh - 10px); }
+    footer .iconbox {
+      width: 10%; }
+    footer p {
+      font-size: .9rem;
+      width: 90%; }
   .footerHomepage p {
     font-size: .7rem; }
   .header h1 {
@@ -7565,7 +7566,9 @@ footer {
       font-size: 1.3rem;
       padding: 3rem; }
   .discounts .image {
-    height: 62.5vh; } }
+    height: 62.5vh; }
+  .footer {
+    height: calc(6vh - 10px); } }
 
 @media screen and (max-width: 900px) and (orientation: landscape) {
   .bar {
@@ -7947,7 +7950,7 @@ form {
     background-image: url("/img/grid/typewriter.jpg");
     animation: fade 1s 4s linear forwards; }
   .grid-element-6 {
-    background-image: url("/img/grid/reporter.jpg");
+    background-image: url("/img/grid/reportaz.jpg");
     animation: fade 1s 4.5s linear forwards; }
   .grid-element-7 {
     background-image: url("/img/grid/pen.jpg");
