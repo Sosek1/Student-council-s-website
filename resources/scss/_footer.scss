@@ -1,51 +1,50 @@
 footer {
-    height: calc(6vh - 10px);
-    background: $third-color;
-    @include center;
-    opacity: 0;
+	background: $third-color;
+	@include center;
+	opacity: 0;
 	animation: fade 1s 4s linear forwards;
 	margin-top: 10px;
 
-    p {
-        margin: 0;
-        color: $second-color;
-        font-family: $font-style;
-    }
+	p {
+		margin: 0;
+		color: $second-color;
+		font-family: $font-style;
+	}
 
-    .iconbox {
-        @include center;
+	.iconbox {
+		@include center;
 		@extend .mr-2;
 
-        a {
-            @include center;
+		a {
+			@include center;
 			text-decoration: none;
 
-            i {
-                color: $second-color;
-                justify-content: center;
-                @include transition-ease;
-            }
+			i {
+				color: $second-color;
+				justify-content: center;
+				@include transition-ease;
+			}
 
-            i:hover {
-                color: $fourth-color;
-            }
-        }
+			i:hover {
+				color: $fourth-color;
+			}
+		}
 
 
-    }
+	}
 
 }
 
 .footerHomepage {
-    height: 5vh;
-    background: $third-color;
+	height: 5vh;
+	background: $third-color;
 	@include center;
 	margin-top: 0px;
 
-    p {
-        margin: 0;
-        color: $second-color;
-        font-family: $font-style;
-        @include center;
-    }
+	p {
+		margin: 0;
+		color: $second-color;
+		font-family: $font-style;
+		@include center;
+	}
 }

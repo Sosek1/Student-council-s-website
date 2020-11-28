@@ -1,46 +1,46 @@
 .blogH1 {
-    color: $third-color;
-    font-weight: 300;
-    margin: 0;
-    opacity: 0;
-    animation: fade 1s 1.5s linear forwards;
+	color: $third-color;
+	font-weight: 300;
+	margin: 0;
+	opacity: 0;
+	animation: fade 1s 1.5s linear forwards;
 }
 
 .wrapperDesktop {
-    cursor: pointer;
+	cursor: pointer;
 
-    a {
-        width: 100%;
-        height: 100%;
-    }
+	a {
+		width: 100%;
+		height: 100%;
+	}
 }
 
 .wrapperMobile {
-    width: 100%;
-    min-height: auto;
+	width: 100%;
+	min-height: auto;
 
-    .grid-element-wrapper {
+	.grid-element-wrapper {
 		@extend .mb-2;
-        height: 50vh;
-        width: calc(100% - 16px);
+		height: 50vh;
+		width: calc(100% - 16px);
 		position: relative;
-    }
+	}
 }
 
 .yellowbar {
-    background: $third-color;
-    position: absolute;
-    @include center;
+	background: $third-color;
+	position: absolute;
+	@include center;
 	@include transition-ease;
 	margin: 0.25rem;
 
-    p {
-        font-size: 1.5rem;
-        color: $second-color;
-        margin: 0;
-        @include transition-ease;
-        font-weight: 300;
-    }
+	p {
+		font-size: 1.5rem;
+		color: $second-color;
+		margin: 0;
+		@include transition-ease;
+		font-weight: 300;
+	}
 }
 
 .grid-element {
@@ -55,33 +55,39 @@
 		background-image: url("/img/grid/newspaper.jpg");
 		animation: fade 1s 2s linear forwards;
 	}
+
 	&-2 {
 		@extend .grid-element;
 		background-image: url("/img/grid/microphone.jpg");
 		background-position: bottom;
 		animation: fade 1s 2.5s linear forwards;
 	}
+
 	&-3 {
 		@extend .grid-element;
 		background-image: url("/img/grid/writing.jpg");
 		background-position: bottom;
 		animation: fade 1s 3s linear forwards;
 	}
+
 	&-4 {
 		@extend .grid-element;
 		background-image: url("/img/grid/breakfast.jpg");
 		animation: fade 1s 3.5s linear forwards;
 	}
+
 	&-5 {
 		@extend .grid-element;
 		background-image: url("/img/grid/typewriter.jpg");
 		animation: fade 1s 4s linear forwards;
 	}
+
 	&-6 {
 		@extend .grid-element;
-		background-image: url("/img/grid/reporter.jpg");
+		background-image: url("/img/grid/reportaz.jpg");
 		animation: fade 1s 4.5s linear forwards;
 	}
+
 	&-7 {
 		@extend .grid-element;
 		background-image: url("/img/grid/pen.jpg");
