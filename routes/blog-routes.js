@@ -6,6 +6,19 @@ const markdownIt = require("markdown-it")({
 const requireText = require("require-text");
 
 module.exports = (app) => {
+	function addNoBreakSpaces(text) {
+		text = text.split(" ");
+
+		for (let i = text.length - 1; i > 0; i--) {
+			if (text[i - 1].length == 1 && text[i - 1] != "#") {
+				text[i] = text[i - 1] + "&nbsp;" + text[i];
+				text.splice(i - 1, 1);
+			}
+		}
+
+		return text.join(" ");
+	}
+
 	app.get("/blog", (req, res) => {
 		res.render("blog/index");
 	});
@@ -55,7 +68,11 @@ module.exports = (app) => {
 		const bodyPath = `../content/blog/${content}/${contentData[content][id - 1].filename}.md`;
 		res.render("blog/blog-content", {
 			content: contentData[content][id - 1],
-			body: markdownIt.render(requireText(bodyPath, require))
+			body: markdownIt.render(
+				addNoBreakSpaces(
+					requireText(bodyPath, require)
+				)
+			)
 		})
 	})
 }

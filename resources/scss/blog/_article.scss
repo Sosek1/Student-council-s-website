@@ -21,34 +21,39 @@ body {
 			@extend .text-center;
 		}
 
-		.authorWrapper {
-			@extend .ml-5;
-			display: flex;
-			justify-content: left;
-			align-items: center;
+		.authors {
+			@extend .mb-5;
+			@extend .d-flex;
+			@extend .justify-content-start;
+			@extend .justify-content-lg-center;
+			@extend .align-items-start;
+			@extend .align-items-lg-center;
+			@extend .flex-wrap;
+			@extend .flex-lg-row;
+			@extend .flex-column;
 
-			img {
-				@extend .rounded-circle;
-				width: 70px;
-				height: 70px;
-				border-width: 5px;
-				border-style: solid;
-				border-color: $third-color;
-			}
+			.authorWrapper {
+				@extend .d-flex;
+				@extend .justify-content-center;
+				@extend .align-items-center;
+				@extend .mx-3;
+				@extend .my-2;
 
-			p {
-				@extend .h4;
-				margin: 0;
-				margin-left: 10px;
-			}
-		}
+				img {
+					@extend .rounded-circle;
+					width: 70px;
+					height: 70px;
+					border-width: 5px;
+					border-style: solid;
+					border-color: $third-color;
+				}
 
-		.tags {
-			@extend .ml-auto;
-
-			p {
-				font-size: 17.5px;
-				margin-bottom: 0;
+				p {
+					@extend .h4;
+					margin: 0;
+					margin-left: 10px;
+					font-size: 25px;
+				}
 			}
 		}
 
@@ -70,6 +75,7 @@ body {
 
 			p {
 				text-align: justify;
+				font-size: 19px;
 			}
 		}
 	}

@@ -1,5 +1,4 @@
 - const title = content.title
-- const tags = content.tags.map(tag => "#" + tag.replace(/\s/g, "-")).join(" ");
 
 doctype html
 html( lang="pl" )
@@ -14,13 +13,11 @@ html( lang="pl" )
 			.main-min-height.blog-content-wrapper
 				.title #{content.title}
 
-				.d-flex.align-items-center.mb-5
-					.authorWrapper
-						img( src=`/img/blog/authors/${content.authorAvatar}` )
-						p #{content.author}
-
-					.tags
-						p #{tags}
+				.authors
+					each author in content.authors
+						.authorWrapper
+							img( src=`/img/blog/authors/${author.avatar}` )
+							p #{author.name}
 
 				.content-wrapper !{body}
 

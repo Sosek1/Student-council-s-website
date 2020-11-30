@@ -25,11 +25,10 @@ html( lang="pl" )
 
 									.card-body
 										h4= item.title
-
-										p Autor: #{item.author}
-
-										- const itemTags = item.tags.map(tag => "#" + tag.replace(/\s/g, "-")).join(" ");
-										p #{itemTags}
+										if item.authors.length == 1
+											p Autor: #{item.authors[0].name}
+										else
+											p Autorzy: #{item.authors.map(item => item.name).join(", ")}
 
 					else
 						.col-12.font-weight-bold.text-center

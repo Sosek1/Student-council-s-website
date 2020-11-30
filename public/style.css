@@ -295,7 +295,7 @@ template {
   display: none !important; }
 
 h1, h2, h3, h4, h5, h6,
-.h1, .h2, .h3, .h4, body .blog-content-wrapper .authorWrapper p, .h5, .h6 {
+.h1, .h2, .h3, .h4, body .blog-content-wrapper .authors .authorWrapper p, .h5, .h6 {
   margin-bottom: 0.5rem;
   font-weight: 500;
   line-height: 1.2; }
@@ -309,7 +309,7 @@ h2, .h2 {
 h3, .h3 {
   font-size: 1.75rem; }
 
-h4, .h4, body .blog-content-wrapper .authorWrapper p {
+h4, .h4, body .blog-content-wrapper .authors .authorWrapper p {
   font-size: 1.5rem; }
 
 h5, .h5 {
@@ -4837,7 +4837,7 @@ button.bg-dark:focus {
 .rounded-lg {
   border-radius: 0.3rem !important; }
 
-.rounded-circle, body .blog-content-wrapper .authorWrapper img {
+.rounded-circle, body .blog-content-wrapper .authors .authorWrapper img {
   border-radius: 50% !important; }
 
 .rounded-pill {
@@ -4872,7 +4872,7 @@ button.bg-dark:focus {
 .d-table-cell {
   display: table-cell !important; }
 
-.d-flex, .about .text {
+.d-flex, .about .text, body .blog-content-wrapper .authors, body .blog-content-wrapper .authors .authorWrapper {
   display: flex !important; }
 
 .d-inline-flex {
@@ -5015,7 +5015,7 @@ button.bg-dark:focus {
 .flex-row {
   flex-direction: row !important; }
 
-.flex-column, .about .text {
+.flex-column, .about .text, body .blog-content-wrapper .authors {
   flex-direction: column !important; }
 
 .flex-row-reverse {
@@ -5024,7 +5024,7 @@ button.bg-dark:focus {
 .flex-column-reverse {
   flex-direction: column-reverse !important; }
 
-.flex-wrap {
+.flex-wrap, body .blog-content-wrapper .authors {
   flex-wrap: wrap !important; }
 
 .flex-nowrap {
@@ -5048,13 +5048,13 @@ button.bg-dark:focus {
 .flex-shrink-1 {
   flex-shrink: 1 !important; }
 
-.justify-content-start {
+.justify-content-start, body .blog-content-wrapper .authors {
   justify-content: flex-start !important; }
 
 .justify-content-end {
   justify-content: flex-end !important; }
 
-.justify-content-center {
+.justify-content-center, body .blog-content-wrapper .authors .authorWrapper {
   justify-content: center !important; }
 
 .justify-content-between {
@@ -5063,13 +5063,13 @@ button.bg-dark:focus {
 .justify-content-around, .about .text {
   justify-content: space-around !important; }
 
-.align-items-start {
+.align-items-start, body .blog-content-wrapper .authors {
   align-items: flex-start !important; }
 
 .align-items-end {
   align-items: flex-end !important; }
 
-.align-items-center {
+.align-items-center, body .blog-content-wrapper .authors .authorWrapper {
   align-items: center !important; }
 
 .align-items-baseline {
@@ -5255,7 +5255,7 @@ button.bg-dark:focus {
     align-self: stretch !important; } }
 
 @media (min-width: 992px) {
-  .flex-lg-row {
+  .flex-lg-row, body .blog-content-wrapper .authors {
     flex-direction: row !important; }
   .flex-lg-column {
     flex-direction: column !important; }
@@ -5283,7 +5283,7 @@ button.bg-dark:focus {
     justify-content: flex-start !important; }
   .justify-content-lg-end {
     justify-content: flex-end !important; }
-  .justify-content-lg-center {
+  .justify-content-lg-center, body .blog-content-wrapper .authors {
     justify-content: center !important; }
   .justify-content-lg-between {
     justify-content: space-between !important; }
@@ -5293,7 +5293,7 @@ button.bg-dark:focus {
     align-items: flex-start !important; }
   .align-items-lg-end {
     align-items: flex-end !important; }
-  .align-items-lg-center {
+  .align-items-lg-center, body .blog-content-wrapper .authors {
     align-items: center !important; }
   .align-items-lg-baseline {
     align-items: baseline !important; }
@@ -5606,7 +5606,8 @@ button.bg-dark:focus {
   margin: 0.5rem !important; }
 
 .mt-2, body .blog-content-wrapper .content-wrapper h1,
-.my-2 {
+.my-2,
+body .blog-content-wrapper .authors .authorWrapper {
   margin-top: 0.5rem !important; }
 
 .mr-2, footer .iconbox,
@@ -5615,7 +5616,8 @@ button.bg-dark:focus {
   margin-right: 0.5rem !important; }
 
 .mb-2, .wrapperMobile .grid-element-wrapper,
-.my-2 {
+.my-2,
+body .blog-content-wrapper .authors .authorWrapper {
   margin-bottom: 0.5rem !important; }
 
 .ml-2,
@@ -5633,6 +5635,7 @@ button.bg-dark:focus {
 .mr-3,
 .mx-3,
 body .blog-content-wrapper .title,
+body .blog-content-wrapper .authors .authorWrapper,
 .content-list {
   margin-right: 1rem !important; }
 
@@ -5643,6 +5646,7 @@ body .blog-content-wrapper .title,
 .ml-3,
 .mx-3,
 body .blog-content-wrapper .title,
+body .blog-content-wrapper .authors .authorWrapper,
 .content-list {
   margin-left: 1rem !important; }
 
@@ -5676,11 +5680,11 @@ body .blog-content-wrapper .title,
 .mx-5 {
   margin-right: 3rem !important; }
 
-.mb-5,
+.mb-5, body .blog-content-wrapper .authors,
 .my-5 {
   margin-bottom: 3rem !important; }
 
-.ml-5, body .blog-content-wrapper .authorWrapper,
+.ml-5,
 .mx-5 {
   margin-left: 3rem !important; }
 
@@ -5908,7 +5912,7 @@ body .blog-content-wrapper .title,
 .my-auto {
   margin-bottom: auto !important; }
 
-.ml-auto, body .blog-content-wrapper .tags,
+.ml-auto,
 .mx-auto {
   margin-left: auto !important; }
 
@@ -7594,7 +7598,7 @@ footer {
   background-color: #080808; }
 
 .main-min-height {
-  min-height: 76.5vh; }
+  min-height: 72.5vh; }
 
 .banner {
   height: 67.5vh;
@@ -8030,22 +8034,16 @@ body p::selection {
 body .blog-content-wrapper {
   opacity: 0;
   animation: fade 1s 2.75s linear forwards; }
-  body .blog-content-wrapper .authorWrapper {
-    display: flex;
-    justify-content: left;
-    align-items: center; }
-    body .blog-content-wrapper .authorWrapper img {
-      width: 70px;
-      height: 70px;
-      border-width: 5px;
-      border-style: solid;
-      border-color: #e49e00; }
-    body .blog-content-wrapper .authorWrapper p {
-      margin: 0;
-      margin-left: 10px; }
-  body .blog-content-wrapper .tags p {
-    font-size: 17.5px;
-    margin-bottom: 0; }
+  body .blog-content-wrapper .authors .authorWrapper img {
+    width: 70px;
+    height: 70px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #e49e00; }
+  body .blog-content-wrapper .authors .authorWrapper p {
+    margin: 0;
+    margin-left: 10px;
+    font-size: 25px; }
   body .blog-content-wrapper .content-wrapper img {
     display: block;
     margin-left: auto;
@@ -8053,7 +8051,8 @@ body .blog-content-wrapper {
     max-width: 80%;
     max-height: 50vh; }
   body .blog-content-wrapper .content-wrapper p {
-    text-align: justify; }
+    text-align: justify;
+    font-size: 19px; }
 
 .content-list {
   opacity: 0;
