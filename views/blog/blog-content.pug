@@ -16,7 +16,7 @@ html( lang="pl" )
 				.authors
 					each author in content.authors
 						.authorWrapper
-							img( src=`/img/blog/authors/${author.avatar}` )
+							img( src=`/img/blog/authors/${author.avatar || "default-avatar.jpg"}` )
 							p #{author.name}
 
 				.content-wrapper !{body}
