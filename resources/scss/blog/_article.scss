@@ -59,6 +59,7 @@ body {
 
 		.content-wrapper {
 			@extend .mb-4;
+			font-size: 19px;
 
 			img {
 				display: block;
@@ -75,7 +76,6 @@ body {
 
 			p {
 				text-align: justify;
-				font-size: 19px;
 			}
 		}
 	}
