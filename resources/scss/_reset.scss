@@ -41,5 +41,10 @@
 		background-color: $third-color;
 	}
 
+	li::selection {
+		background-color: $third-color;
+	}
+
+
 
 }
