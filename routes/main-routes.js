@@ -19,6 +19,19 @@ module.exports = (app) => {
 		await transporter.sendMail(message, err => console.log(err));
 	}
 
+	function addNoBreakSpaces(text) {
+		text = text.split(" ");
+
+		for (let i = text.length - 1; i > 0; i--) {
+			if (text[i - 1].length == 1 && text[i - 1] != "#") {
+				text[i] = text[i - 1] + "&nbsp;" + text[i];
+				text.splice(i - 1, 1);
+			}
+		}
+
+		return text.join(" ");
+	}
+
 	app.get("/", (req, res) => {
 		res.render("index");
 	});
@@ -27,7 +40,13 @@ module.exports = (app) => {
 		const descriptions = require("../content/descriptions.json");
 		let texts = [];
 		descriptions.forEach(item => {
-			texts.push(markdownIt.render(requireText(`../content/descriptions/${item.file}.md`, require)))
+			texts.push(
+				markdownIt.render(
+					addNoBreakSpaces(
+						requireText(`../content/descriptions/${item.file}.md`, require)
+					)
+				)
+			)
 		});
 
 		res.render("about-us", {
