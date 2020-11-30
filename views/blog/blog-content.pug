@@ -14,12 +14,13 @@ html( lang="pl" )
 			.main-min-height.blog-content-wrapper
 				.title #{content.title}
 
-				.authorWrapper
-					img( src=`/img/blog/authors/${content.authorAvatar}` )
-					p #{content.author}
+				.d-flex.align-items-center.mb-5
+					.authorWrapper
+						img( src=`/img/blog/authors/${content.authorAvatar}` )
+						p #{content.author}
 
-				.tags
-					p #{tags}
+					.tags
+						p #{tags}
 
 				.content-wrapper !{body}
 
