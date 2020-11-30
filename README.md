@@ -109,10 +109,8 @@ Aby wprowadzony post pojawił się na stronie, należy:
 # Wprowadzenie zmian w oprogramowaniu
 Aby wprowadzić zmiany w plikach strony, należy wykonać *commit* i *push* do repozytorium, w którym znajduje się strona. Następnie należy przy użyciu SSH połączyć się z serwerem i zmienić ścieżkę na `~/website`. Potem w terminal należy wpisać polecenie `git pull` i wprowadzić je w terminal. Po zakończeniu wykonywania polecenia, należy wpisać i wprowadzić polecenie `pm2 restart index`.
 
-# Autorzy strony:
-## Bartosz Sosin
-Front-end i design
+# Autorzy:
+- Sosek1 (Frontend i design)
 [GitHub](https://github.com/Sosek1)
-## RCRalph
-Back-end, front-end i deployment
+- RCRalph (Backend, frontend i deployment)
 [GitHub](https://github.com/RCRalph)
