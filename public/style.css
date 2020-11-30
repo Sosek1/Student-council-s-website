@@ -7200,6 +7200,12 @@ a.text-dark:hover, a.text-dark:focus {
     background-color: #e49e00; }
   .container-fluid p::selection, .container-sm p::selection, .container-md p::selection, .container-lg p::selection, .container-xl p::selection {
     background-color: #e49e00; }
+  .container-fluid ul::selection, .container-sm ul::selection, .container-md ul::selection, .container-lg ul::selection, .container-xl ul::selection {
+    background-color: #e49e00; }
+  .container-fluid ol::selection, .container-sm ol::selection, .container-md ol::selection, .container-lg ol::selection, .container-xl ol::selection {
+    background-color: #e49e00; }
+  .container-fluid li::selection, .container-sm li::selection, .container-md li::selection, .container-lg li::selection, .container-xl li::selection {
+    background-color: #e49e00; }
 
 nav {
   display: flex;
