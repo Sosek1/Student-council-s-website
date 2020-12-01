@@ -54,7 +54,7 @@ Aby dodać zawartość posta, należy:
 1. Zmienić folder na `~/website/content/blog/(ODPOWIEDNIA KATEGORIA)`.
 1. W terminal wpisać polecenie `curl -L "(TU WKLEJ DIRECT-LINK)" > (TU WPISZ NAZWĘ I ROZSZERZENIE PLIKU)`. Nazwa pliku powinna odpowiadać nazwie wpisanej na Dysku Google.
 1. Wprowadzić polecenie do terminala.
-## Edycja pliku `data.json`
+## Edycja pliku `blog.json`
 Aby wprowadzony post pojawił się na stronie, należy:
 1. Zalogować się na Dysk Google.
 1. Zmienić folder na `/Content`.
