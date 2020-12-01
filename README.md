@@ -35,7 +35,7 @@ Aby dodać miniaturę posta, należy:
 1. Zmienić folder na `/Images/Blog/Thumbnails`.
 1. Do folderu przesłać plik zawierający miniaturę. Rekomendowana nazwa to trzy pierwsze słowa tytułu, lecz w przypadku wystąpienia kolizji liczbę wyrazów można zwiększyć. Należy unikać białych znaków tj. spacji.
 1. Skopiować link do udostępniania.
-1. Wygenerować *direct-link* do awataru, na przykład używając [tego narzędzia](https://www.wonderplugin.com/online-tools/google-drive-direct-link-generator/).
+1. Wygenerować *direct-link* do zdjęcia, na przykład używając [tego narzędzia](https://www.wonderplugin.com/online-tools/google-drive-direct-link-generator/).
 1. Przechować wygenerowany link w schowku.
 1. Połączyć się z serwerem przy użyciu SSH (hasło należy wygenerować z panelu administratora).
 1. Zmienić folder na `~/website/public/blog/thumbnails`.
