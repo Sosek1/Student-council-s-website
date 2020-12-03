@@ -1,208 +1,208 @@
 .contact {
-    @include center;
+	@include center;
 }
 
 form {
-    display: flex;
-    // justify-content: center;
-    flex-direction: column;
-    background-color: $third-color;
-    opacity: 0;
-    animation: fade 1s 1.5s linear forwards;
+	display: flex;
+	// justify-content: center;
+	flex-direction: column;
+	background-color: $third-color;
+	opacity: 0;
+	animation: fade 1s 1.5s linear forwards;
 
-    h1 {
-        height: 10%;
-        color: $second-color;
-    }
+	h1 {
+		height: 10%;
+		color: $second-color;
+	}
 
-    input {
-        height: 10%;
-        background-color: transparent;
-        border-style: none;
-        border-bottom: 2px solid $second-color;
-        color: $second-color;
-    }
+	input {
+		height: 10%;
+		background-color: transparent;
+		border-style: none;
+		border-bottom: 2px solid $second-color;
+		color: $second-color;
+	}
 
-    ::placeholder {
-        color: $second-color;
-    }
+	::placeholder {
+		color: $second-color;
+	}
 
-    textarea {
-        background-color: transparent;
-        height: 60%;
-        border: none;
-        color: $second-color;
-    }
+	textarea {
+		background-color: transparent;
+		height: 60%;
+		border: none;
+		color: $second-color;
+	}
 
-    textarea:checked {
-        border: none;
-    }
+	textarea:checked {
+		border: none;
+	}
 
-    .buttonNote {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+	.buttonNote {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
 
-        button {
-            border: 2px solid $second-color;
-            background-color: transparent;
-            color: $second-color;
-            @include transition-ease;
-        }
+		button {
+			border: 2px solid $second-color;
+			background-color: transparent;
+			color: $second-color;
+			@include transition-ease;
+		}
 
-        button:hover {
-            background-color: $main-color;
-        }
+		button:hover {
+			background-color: $main-color;
+		}
 
-        i {
-            font-size: 2rem;
-            color: $second-color;
-            @include transition-ease;
-        }
+		i {
+			font-size: 2rem;
+			color: $second-color;
+			@include transition-ease;
+		}
 
-        i:hover {
-            animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
-            transform: translate3d(0, 0, 0);
-            backface-visibility: hidden;
-            perspective: 1000px;
-            color: $main-color;
-        }
-    }
+		i:hover {
+			animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
+			transform: translate3d(0, 0, 0);
+			backface-visibility: hidden;
+			perspective: 1000px;
+			color: $main-color;
+		}
+	}
 
 }
 
 .icons {
-    // width: 100%;
-    // height: 100vh;
+	// width: 100%;
+	// height: 100vh;
 
-    .row {
-        width: 100%;
-        height: 50%;
+	.row {
+		width: 100%;
+		height: 50%;
 
-        .icon1 {
-            border: 2px solid $third-color;
-            opacity: 0;
-            animation: fade 1s 2s linear forwards;
+		.icon1 {
+			border: 2px solid $third-color;
+			opacity: 0;
+			animation: fade 1s 2s linear forwards;
 
-            a {
-                @include center;
-                flex-direction: column;
-                filter: brightness(.5);
-                @include transition-ease;
-                height: 100%;
+			a {
+				@include center;
+				flex-direction: column;
+				filter: brightness(.5);
+				@include transition-ease;
+				height: 100%;
 
-                .iconbox2 {
-                    @include center;
-                    height: 70%;
-                    width: 100%;
-                    text-decoration: none;
-                }
+				.iconbox2 {
+					@include center;
+					height: 70%;
+					width: 100%;
+					text-decoration: none;
+				}
 
-                h1 {
-                    height: 30%;
-                    color: $third-color;
-                    text-align: center;
-                    text-decoration: none;
-                }
+				h1 {
+					height: 30%;
+					color: $third-color;
+					text-align: center;
+					text-decoration: none;
+				}
 
-            }
+			}
 
-            a:hover {
-                filter: brightness(1);
-                cursor: pointer;
-                text-decoration: none;
-            }
-        }
+			a:hover {
+				filter: brightness(1);
+				cursor: pointer;
+				text-decoration: none;
+			}
+		}
 
 
 
-    }
+	}
 }
 
 
 @keyframes shake {
 
-    10% {
-        transform: translate3d(-1px, 0, 0);
-    }
+	10% {
+		transform: translate3d(-1px, 0, 0);
+	}
 
-    20% {
-        transform: translate3d(2px, 0, 0);
-    }
+	20% {
+		transform: translate3d(2px, 0, 0);
+	}
 
-    30% {
-        transform: translate3d(-4px, 0, 0);
-    }
+	30% {
+		transform: translate3d(-4px, 0, 0);
+	}
 
-    40% {
-        transform: translate3d(4px, 0, 0);
-    }
+	40% {
+		transform: translate3d(4px, 0, 0);
+	}
 
-    50% {
-        transform: translate3d(-4px, 0, 0);
-    }
+	50% {
+		transform: translate3d(-4px, 0, 0);
+	}
 
-    60% {
-        transform: translate3d(4px, 0, 0);
-    }
+	60% {
+		transform: translate3d(4px, 0, 0);
+	}
 
-    70% {
-        transform: translate3d(-4px, 0, 0);
-    }
+	70% {
+		transform: translate3d(-4px, 0, 0);
+	}
 
-    80% {
-        transform: translate3d(2px, 0, 0);
-    }
+	80% {
+		transform: translate3d(2px, 0, 0);
+	}
 
-    90% {
-        transform: translate3d(-1px, 0, 0);
-    }
+	90% {
+		transform: translate3d(-1px, 0, 0);
+	}
 }
 
 /* The Modal (background) */
 .modal {
-    display: none;
-    /* Hidden by default */
-    position: fixed;
-    /* Stay in place */
-    z-index: 1;
-    /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%;
-    /* Full width */
-    height: 100%;
-    /* Full height */
-    overflow: hidden;
-    /* Enable scroll if needed */
-    background-color: rgb(0, 0, 0);
-    background-color: rgba(0, 0, 0, 0.4);
+	display: none;
+	/* Hidden by default */
+	position: fixed;
+	/* Stay in place */
+	z-index: 1;
+	/* Sit on top */
+	left: 0;
+	top: 0;
+	width: 100%;
+	/* Full width */
+	height: 100%;
+	/* Full height */
+	overflow: hidden;
+	/* Enable scroll if needed */
+	background-color: rgb(0, 0, 0);
+	background-color: rgba(0, 0, 0, 0.4);
 }
 
 .modal-content {
-    background-color: $main-color;
-    padding: 20px;
-    width: 40vh;
-    height: 40vh;
-    margin: auto auto;
+	background-color: $main-color;
+	padding: 20px;
+	width: 40vh;
+	height: 40vh;
+	margin: auto auto;
 
-    p {
-        font-size: 1rem;
-        color: $second-color;
-        text-align: center;
-        margin: auto auto;
-    }
+	p {
+		font-size: 1rem;
+		color: $second-color;
+		text-align: center;
+		margin: auto auto;
+	}
 }
 
 .close {
-    color: $third-color;
-    margin-left: 95%;
-    font-size: 28px;
+	color: $third-color;
+	margin-left: 95%;
+	font-size: 28px;
 }
 
 .close:hover,
 .close:focus {
-    color: $second-color;
-    text-decoration: none;
-    cursor: pointer;
+	color: $second-color;
+	text-decoration: none;
+	cursor: pointer;
 }
