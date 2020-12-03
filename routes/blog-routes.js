@@ -31,7 +31,8 @@ module.exports = (app) => {
 				felietons: "Felietony",
 				stories: "Opowiadania",
 				reportages: "Reportaże",
-				poetry: "Kącik poetycki"
+				poetry: "Kącik poetycki",
+				reviews: "Recenzje"
 			};
 
 		if (contentTypes[content] == undefined) {
@@ -56,7 +57,8 @@ module.exports = (app) => {
 				felietons: "Felietony",
 				stories: "Opowiadania",
 				reportages: "Reportaże",
-				poetry: "Kącik poetycki"
+				poetry: "Kącik poetycki",
+				reviews: "Recenzje"
 			};
 
 		const contentData = require("../content/blog.json");
