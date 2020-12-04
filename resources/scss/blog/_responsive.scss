@@ -1,119 +1,127 @@
 @include media-sm {
 	.wrapperDesktop {
-        display: none;
-    }
-    .wrapperMobile {
-        display: flex;
+		display: none;
 	}
 
-    .blogH1 {
-        font-size: 2rem;
-    }
+	.wrapperMobile {
+		display: flex;
+	}
 
-    .yellowbar {
-        bottom: 0px;
-        left: 0px;
-        width: 100%;
+	.blogH1 {
+		font-size: 2rem;
+	}
+
+	.yellowbar {
+		bottom: 0px;
+		left: 0px;
+		width: 100%;
 		height: 60px;
 		margin: 0px;
-    }
+	}
 
-    .topBar {
-        h1 {
-            font-size: .8rem;
-            margin: 10px;
-        }
+	.topBar {
+		h1 {
+			font-size: .8rem;
+			margin: 10px;
+		}
 
-        img {
-            margin: 10px;
-        }
-    }
+		img {
+			margin: 10px;
+		}
+	}
 
-    .articleWrapper {
-        .title {
-            font-size: 2rem;
-        }
+	.articleWrapper {
+		.title {
+			font-size: 2rem !important;
+		}
 
-        .autor {
-            h3 {
-                font-size: 1rem;
-            }
-        }
+		.autor {
+			h3 {
+				font-size: 1rem;
+			}
+		}
 
-        .subtitle {
-            font-size: 1.2rem;
-        }
+		.subtitle {
+			font-size: 1.2rem;
+		}
 
-        .text {
-            p {
-                font-size: 1rem;
-            }
-        }
-    }
+		.text {
+			p {
+				font-size: 1rem;
+			}
+		}
+	}
 }
 
 @include media-md {}
 
 @include media-lg {
-    .wrapperDesktop {
-        display: none;
-    }
-    .wrapperMobile {
-        display: flex;
-    }
+	.wrapperDesktop {
+		display: none;
+	}
 
-    .yellowbar {
-        bottom: 0px;
-        left: 0px;
-        width: 100%;
+	.wrapperMobile {
+		display: flex;
+	}
+
+	.yellowbar {
+		bottom: 0px;
+		left: 0px;
+		width: 100%;
 		height: 60px;
 		margin: 0px;
-    }
+	}
 
-    .topBar {
-        h1 {
-            font-size: 1.5rem;
-        }
-    }
+	.topBar {
+		h1 {
+			font-size: 1.5rem;
+		}
+	}
 
-    .blogH1 {
-        font-size: 3rem;
-    }
+	.blogH1 {
+		font-size: 3rem;
+	}
 
-    .articleWrapper {
-        .title {
-            font-size: 4rem;
-        }
+	.articleWrapper {
+		.title {
+			font-size: 3rem !important;
+		}
 
-        .autor {
-            h3 {
-                font-size: 1.5rem;
-            }
-        }
+		.autor {
+			h3 {
+				font-size: 1.5rem;
+			}
+		}
 
-        .subtitle {
-            font-size: 1.5rem;
-        }
+		.subtitle {
+			font-size: 1.5rem;
+		}
 
-        .text {
-            p {
-                font-size: 1.3rem;
-            }
-        }
-    }
+		.text {
+			p {
+				font-size: 1.3rem;
+			}
+		}
+	}
 }
 
 @include media-xl {
 	.wrapperDesktop {
-        display: flex;
-    }
-    .wrapperMobile {
-        display: none;
+		display: flex;
+	}
+
+	.wrapperMobile {
+		display: none;
+	}
+
+
+	.title {
+		font-size: 4rem !important;
 	}
 
 	.yellowbar {
-        width: calc(100% - 0.5rem);
+		width: calc(100% - 0.5rem);
 		height: 60px;
 		margin: 0.25rem;
-    }
+	}
 }
