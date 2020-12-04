@@ -1,6 +1,5 @@
 # Strona Samorządu XLII LO Kraków
 Witam w repozytorium. Miłego dnia życzę.
-
 # Ogólne postanowienia
  - Wspominany w ciągu tego dokumentu Dysk Google należy do konta `radiowezel42lo@gmail.com`.
  - Zapis typu `curl -L "(TU WKLEJ DIRECT-LINK)" > (TU WPISZ NAZWĘ I ROZSZERZENIE PLIKU)` jest równoznaczny z wpisaniem (dla direct-linku https://drive.google.com/uc?export=download&id=110etj4D2dNtVgC6X_h6SZusfav-zdORa i nazwy i rozszerzenia pliku `data.json`): `curl -L "https://drive.google.com/uc?export=download&id=110etj4D2dNtVgC6X_h6SZusfav-zdORa" > data.json`.
@@ -10,6 +9,9 @@ Witam w repozytorium. Miłego dnia życzę.
  - Aby wypisać zawartość aktualnego folderu, należy użyć komendy `ls`.
  - Aby zobaczyć zawartość danego pliku, należy użyć komendy `cat (NAZWA I ROZSZERZENIE PLIKU)`.
  - Aby zakończyć połączenie z serwerem, należy użyć komendy `logout`.
+# Uwagi do Markdowna
+ - Aby oddzielić paragrafy (`</p><p>`), należy użyć dwóch enterów.
+ - Aby wstawić linebreak (`<br>`), należy wstawić dwie spacje.
 # Wstawianie awatarów
 Aby wstawić awatar na stronę należy:
 1. Zalogować się na Dysk Google.
