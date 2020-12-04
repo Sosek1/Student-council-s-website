@@ -11,7 +11,7 @@ Witam w repozytorium. Miłego dnia życzę.
  - Aby zakończyć połączenie z serwerem, należy użyć komendy `logout`.
 # Uwagi do Markdowna
  - Aby oddzielić paragrafy (`</p><p>`), należy użyć dwóch enterów.
- - Aby wstawić linebreak (`<br>`), należy wstawić dwie spacje.
+ - Aby wstawić linebreak (`<br>`), należy wstawić dwie spacje i enter.
 # Wstawianie awatarów
 Aby wstawić awatar na stronę należy:
 1. Zalogować się na Dysk Google.
