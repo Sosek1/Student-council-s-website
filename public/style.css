@@ -337,7 +337,7 @@ h6, .h6 {
   font-weight: 300;
   line-height: 1.2; }
 
-.display-4, body .blog-content-wrapper .title {
+.display-4 {
   font-size: 3.5rem;
   font-weight: 300;
   line-height: 1.2; }
@@ -7987,7 +7987,7 @@ form {
   .topBar img {
     margin: 10px; }
   .articleWrapper .title {
-    font-size: 2rem; }
+    font-size: 2.5rem !important; }
   .articleWrapper .autor h3 {
     font-size: 1rem; }
   .articleWrapper .subtitle {
@@ -8011,7 +8011,7 @@ form {
   .blogH1 {
     font-size: 3rem; }
   .articleWrapper .title {
-    font-size: 4rem; }
+    font-size: 3rem !important; }
   .articleWrapper .autor h3 {
     font-size: 1.5rem; }
   .articleWrapper .subtitle {
@@ -8024,6 +8024,8 @@ form {
     display: flex; }
   .wrapperMobile {
     display: none; }
+  .title {
+    font-size: 4rem !important; }
   .yellowbar {
     width: calc(100% - 0.5rem);
     height: 60px;
