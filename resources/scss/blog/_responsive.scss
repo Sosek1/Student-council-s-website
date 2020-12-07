@@ -32,7 +32,7 @@
 
 	.articleWrapper {
 		.title {
-			font-size: 2.5rem !important;
+			font-size: 3rem !important;
 		}
 
 		.autor {
@@ -83,10 +83,6 @@
 	}
 
 	.articleWrapper {
-		.title {
-			font-size: 3rem !important;
-		}
-
 		.autor {
 			h3 {
 				font-size: 1.5rem;
@@ -114,9 +110,11 @@
 		display: none;
 	}
 
+	.articleWrapper {
+		.title {
+			font-size: 4rem !important;
+		}
 
-	.title {
-		font-size: 4rem !important;
 	}
 
 	.yellowbar {
