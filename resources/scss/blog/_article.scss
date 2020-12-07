@@ -1,4 +1,5 @@
 body {
+
 	.title::selection,
 	h1::selection,
 	h2::selection,
@@ -16,7 +17,6 @@ body {
 		.title {
 			@extend .m-4;
 			@extend .mx-3;
-			@extend .display-4;
 			@extend .font-weight-bold;
 			@extend .text-center;
 		}
