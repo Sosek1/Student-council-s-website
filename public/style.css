@@ -7986,13 +7986,13 @@ form {
     margin: 10px; }
   .topBar img {
     margin: 10px; }
-  .articleWrapper .title {
+  .blog-content-wrapper .title {
     font-size: 3rem !important; }
-  .articleWrapper .autor h3 {
+  .blog-content-wrapper .autor h3 {
     font-size: 1rem; }
-  .articleWrapper .subtitle {
+  .blog-content-wrapper .subtitle {
     font-size: 1.2rem; }
-  .articleWrapper .text p {
+  .blog-content-wrapper .text p {
     font-size: 1rem; } }
 
 @media screen and (min-width: 992px) {
@@ -8010,11 +8010,11 @@ form {
     font-size: 1.5rem; }
   .blogH1 {
     font-size: 3rem; }
-  .articleWrapper .autor h3 {
+  .blog-content-wrapper .autor h3 {
     font-size: 1.5rem; }
-  .articleWrapper .subtitle {
+  .blog-content-wrapper .subtitle {
     font-size: 1.5rem; }
-  .articleWrapper .text p {
+  .blog-content-wrapper .text p {
     font-size: 1.3rem; } }
 
 @media screen and (min-width: 1200px) {
@@ -8022,7 +8022,7 @@ form {
     display: flex; }
   .wrapperMobile {
     display: none; }
-  .articleWrapper .title {
+  .blog-content-wrapper .title {
     font-size: 4rem !important; }
   .yellowbar {
     width: calc(100% - 0.5rem);
